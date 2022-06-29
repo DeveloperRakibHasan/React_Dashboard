@@ -1,0 +1,43 @@
+.recharts-cartesian-axis-tick{
+    visibility: visible;
+}
+.yAxis{
+    visibility: hidden;
+    opacity: 0;
+}
+#SvgjsG1071{
+    visibility:hidden;
+    opacity: 0;
+}
+#SvgjsG1432{visibility:hidden; opacity:0;}
+
+
+.recharts-cartesian-axis-tick-line{display:none}
+.apexcharts-menu-icon{
+    visibility:hidden;
+    opacity: 0;
+}
+.recharts-cartesian-grid{opacity:0}
+.recharts-cartesian-axis-line{opacity:0}
+
+.apexcharts-toolbar{visibility:hidden; opacity:0}
+.apexcharts-title-text{visibility:hidden; opacity:0}
+
+.animation-trophy{
+    animation: animate 10s linear infinite;
+    opacity: .6
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(30px) scale(1);
+    }
+    50% {
+        transform: translateX(-30px) scale(1);
+    }
+    100% {
+        transform: translateX(30px) scale(1);
+    }
+ 
+    
+}
