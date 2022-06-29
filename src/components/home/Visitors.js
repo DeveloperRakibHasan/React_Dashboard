@@ -1,0 +1,74 @@
+import React from 'react'
+import { BarChart, Legend, Bar, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import { HiOutlineArrowSmDown } from "react-icons/hi";
+
+function Visitors() {
+
+    const weekdata = [
+        {
+          "name": "S",
+          "uv": 4000,
+          "pv": 2400
+        },
+        {
+          "name": "M",
+          "uv": 3000,
+          "pv": 1398
+        },
+        {
+          "name": "T",
+          "uv": 2000,
+          "pv": 9800
+        },
+        {
+          "name": "W",
+          "uv": 2780,
+          "pv": 3908
+        },
+        {
+          "name": "T",
+          "uv": 1890,
+          "pv": 4800
+        },
+        {
+          "name": "F",
+          "uv": 2390,
+          "pv": 3800
+        },
+        {
+          "name": "S",
+          "uv": 3490,
+          "pv": 4300
+        },
+      ]
+
+  return (
+    <div className='mx-6'>
+    <div className='flex justify-between'>
+      <h6 className='text-[22px] font-medium text-gray-400'>New visitors</h6>
+      <p className='text-gray-400'>Last Week</p>
+    </div>
+   <div className='flex justify-between items-end'>
+    <div>
+    <h2 className='text-[40px] text-[#5A697D] font-medium'>23%</h2>
+    <p className='flex items-center font-medium text-red-500'>
+      <HiOutlineArrowSmDown />
+      -13.24%
+    </p>
+    </div>
+    <div>
+    <BarChart width={300} height={130} data={weekdata}>
+      <CartesianGrid />
+      <XAxis dataKey="name" />
+      <YAxis />
+      <Tooltip />
+      <Legend />
+      <Bar dataKey="pv" fill="#F0F0FC" radius={30} legendType="none" />
+    </BarChart>
+    </div>
+   </div>
+  </div>
+  )
+}
+
+export default Visitors

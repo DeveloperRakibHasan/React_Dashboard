@@ -854,6 +854,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .overflow-scroll {
   overflow: scroll;
 }
@@ -1004,6 +1008,10 @@ video {
   padding-top: 65px;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .text-\[26px\] {
   font-size: 26px;
 }
@@ -1047,6 +1055,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .uppercase {
@@ -1115,6 +1127,11 @@ video {
 .text-\[\#8CDA55\] {
   --tw-text-opacity: 1;
   color: rgb(140 218 85 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
