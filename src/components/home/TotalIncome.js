@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { BsPaypal } from "react-icons/bs";
 import ReactApexChart from 'react-apexcharts'
+import { BsBag } from "react-icons/bs";
+import { GoFileSubmodule } from "react-icons/go";
 import '../style/custom.css'
 
 function TotalIncome() {
@@ -190,7 +192,7 @@ function TotalIncome() {
               </div>
               <div className='flex justify-between items-end gap-2 mt-4 bg-[#F5F5F9] p-4 rounded-lg'>
                 <div className='flex gap-3'>
-                    <span className='p-4 bg-white rounded-lg'><BsPaypal className='text-[20px]' /></span>
+                    <span className='p-4 bg-white rounded-lg'><BsBag className='text-[20px]' /></span>
                     <div>
                         <p className='text-[#6C798B] font-semibold'>Expences</p>
                         <h2 className='font-bold text-[20px] text-[#5A697D]'>$38,658</h2>
@@ -200,7 +202,7 @@ function TotalIncome() {
               </div>
               <div className='flex justify-between items-end gap-2 mt-4 bg-[#F5F5F9] p-4 rounded-lg'>
                 <div className='flex gap-3'>
-                    <span className='p-4 bg-white rounded-lg'><BsPaypal className='text-[20px]' /></span>
+                    <span className='p-4 bg-white rounded-lg'><GoFileSubmodule className='text-[20px]' /></span>
                     <div>
                         <p className='text-[#6C798B] font-semibold'>Profit</p>
                         <h2 className='font-bold text-[20px] text-[#5A697D]'>$18,220</h2>

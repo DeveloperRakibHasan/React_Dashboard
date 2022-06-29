@@ -6,6 +6,9 @@ import Signup from './components/signup/Signup';
 import {AuthProvider} from './context/AuthContext'
 import Home from './components/page/Home';
 import DashbordMenu from './components/dashmenu/DashbordMenu';
+import PublicRoute from './components/createroute/PublicRouter';
+import PrivetRoute from './components/createroute/PrivetRouter';
+import PageNotFound from './components/page/PageNotFound';
 
 function App() {
   return (
@@ -14,9 +17,10 @@ function App() {
     <Navbar/>
     <DashbordMenu />
       <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/login' component={Login} />
-        <Route exact path='/signup' component={Signup} />
+        <PrivetRoute exact path='/' component={Home} />
+        <PublicRoute exact path='/login' component={Login} />
+        <PublicRoute exact path='/signup' component={Signup} />
+        <Route exact component={PageNotFound} />
       </Switch>
     </AuthProvider>
     </>
