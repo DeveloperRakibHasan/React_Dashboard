@@ -13,8 +13,46 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from "swiper";
 
-
 function Home() {
+
+const sliderArray = [
+  {
+    id: 1,
+    title: 'Star Sun Hotel & Apartment',
+    location: 'North Carolina, USA',
+    img: require('../../assets/img/hotel.png')
+  },
+  {
+    id: 2,
+    title: 'Letdo Ji Hotel & Apartment',
+    location: 'New Yrk City, USA',
+    img: require('../../assets/img/hotel1.png')
+  },
+  {
+    id: 3,
+    title: 'Metro Jayakar Apartment',
+    location: 'North Carolina, USA',
+    img: require('../../assets/img/hotel2.png')
+  },
+  {
+    id: 4,
+    title: 'Star Sun Hotel & Apartment',
+    location: 'North Carolina, USA',
+    img: require('../../assets/img/hotel.png')
+  },
+  {
+    id: 5,
+    title: 'Letdo Ji Hotel & Apartment',
+    location: 'New Yrk City, USA',
+    img: require('../../assets/img/hotel1.png')
+  },
+  {
+    id: 6,
+    title: 'Metro Jayakar Apartment',
+    location: 'North Carolina, USA',
+    img: require('../../assets/img/hotel2.png')
+  }
+]
 
   return (
     <>
@@ -67,7 +105,7 @@ function Home() {
           spaceBetween: 20,
         },
         992: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         1280: {
@@ -81,25 +119,17 @@ function Home() {
                 }}
         modules={[Autoplay]}
          >
-        <SwiperSlide>
-          <SliderReview title='Star Sun Hotel & Apartment' location='North Carolina, USA'  img={require('../../assets/img/hotel.png')} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SliderReview title='Letdo Ji Hotel & Apartment' location='New Yrk City, USA' img={require('../../assets/img/hotel1.png')} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SliderReview title='Metro Jayakar Apartment' location='North Carolina, USA' img={require('../../assets/img/hotel2.png')} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SliderReview title='Star Sun Hotel & Apartment' location='North Carolina, USA'  img={require('../../assets/img/hotel.png')} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SliderReview title='Letdo Ji Hotel & Apartment' location='New Yrk City, USA' img={require('../../assets/img/hotel1.png')} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SliderReview title='Metro Jayakar Apartment' location='North Carolina, USA' img={require('../../assets/img/hotel2.png')} />
-        </SwiperSlide>
-        
+        {
+          sliderArray.map((elem)=>{
+            return(
+              <div key={elem.id}>
+              <SwiperSlide>
+                <SliderReview title={elem.title} location={elem.location} img={elem.img} />
+              </SwiperSlide>
+              </div>
+            )
+          })
+        }
        </Swiper>
       </div>
       </div>
