@@ -21,7 +21,6 @@ function DashbordMenu() {
     const [dashboard, setDashboard] = useState(false)
     const [layouts, setLayouts] = useState(false)
     const [invoice, setInvoice] = useState(false)
-    const [users, setUsers] = useState(false)
     const [role, setRole] = useState(false)
     const [page, setPage] = useState(false)
     const [auth, setAuth] = useState(false)
@@ -76,6 +75,12 @@ function DashbordMenu() {
                             <FaRegCalendarAlt className='mr-2' />
                              Calendar
                         </NavLink>
+                        <NavLink exact to='/user' className='flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
+                            <span className='flex items-center py-1'>
+                            <FiUser className='mr-2' />
+                             Users
+                            </span>
+                        </NavLink>
                         <NavLink onClick={()=>setInvoice(!invoice)} exact to='/' className={invoice ? 'flex mb-1 justify-between items-center px-4 py-3 bg-[#E7E7FE]  text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500':'flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'}>
                             <span className='flex items-center py-1'>
                             <BsReverseLayoutTextSidebarReverse className='mr-2' />
@@ -93,23 +98,7 @@ function DashbordMenu() {
                              eCommerce  
                         </Link>
                         </ul>
-                        <NavLink onClick={()=>setUsers(!users)} exact to='/' className={users ? 'flex mb-1 justify-between items-center px-4 py-3 bg-[#E7E7FE]  text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500':'flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'}>
-                            <span className='flex items-center py-1'>
-                            <FiUser className='mr-2' />
-                             Users
-                            </span>
-                            {users ? (<span><FaAngleDown /></span>):(<span><FaAngleRight /></span>)}
-                        </NavLink>
-                        <ul className={users ? 'visible duration-300' : 'hidden'}>
-                        <Link  className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
-                            <BsDot className='mr-2 group-hover:text-blue-400' />
-                             Analytics  
-                        </Link>
-                        <Link  className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
-                            <BsDot className='mr-2 group-hover:text-blue-400' />
-                             eCommerce  
-                        </Link>
-                        </ul>
+                       
                         <NavLink onClick={()=>setRole(!role)} exact to='/' className={role ? 'flex mb-1 justify-between items-center px-4 py-3 bg-[#E7E7FE]  text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500':'flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'}>
                             <span className='flex items-center py-1'>
                             <AiOutlineSafetyCertificate className='mr-2' />
