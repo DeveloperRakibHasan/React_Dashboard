@@ -83,10 +83,9 @@ function Activity() {
                 14.24%
               </p>
              </div>
-             <div>
+             <div className='w-full'>
+             <ResponsiveContainer width="100%" height={130}>
                 <AreaChart
-                  width={350}
-                  height={130}
                   data={data}
                   >
                   <defs>
@@ -100,6 +99,7 @@ function Activity() {
                   <Tooltip />
                   <Area type="monotone" stroke="#8CDA55" fill="url(#total)" fillOpacity={1} dataKey="Total" />
                 </AreaChart>
+               </ResponsiveContainer> 
               </div>
              </div>
             </div>

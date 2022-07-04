@@ -167,10 +167,10 @@ function TotalIncome() {
   return (
     <div className='w-full h-full bg-white col-span-2 box-shadow-1 rounded-xl p-8'>
           <div className='flex justify-between'>
-          <div>
+          <div className='w-[600px]'>
             <h2 className='text-[24px] font-semibold text-[#5A697D]'>Total income</h2>
             <p className='text-[#6C798B]'>Yearly report overview</p>
-            <ReactApexChart options={incomegrap.options} series={incomegrap.series} type="area" height="80%" width={600} />
+            <ReactApexChart options={incomegrap.options} series={incomegrap.series} type="area" height="80%" width='100%' />
           </div>
             <div>
               <div className='flex items-center justify-between'>

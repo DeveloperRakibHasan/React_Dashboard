@@ -1,5 +1,5 @@
 import React from 'react'
-import { BarChart, Legend, Bar, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import { BarChart, Legend, Bar, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 
 function Visitors() {
@@ -56,15 +56,17 @@ function Visitors() {
       -13.24%
     </p>
     </div>
-    <div>
-    <BarChart width={300} height={130} data={weekdata}>
-      <CartesianGrid />
-      <XAxis dataKey="name" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Bar dataKey="pv" fill="#F0F0FC" radius={30} legendType="none" />
-    </BarChart>
+    <div className='w-full'>
+    <ResponsiveContainer width='100%' height={130}>
+      <BarChart data={weekdata}>
+        <CartesianGrid />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="pv" fill="#F0F0FC" radius={30} legendType="none" />
+      </BarChart>
+    </ResponsiveContainer>
     </div>
    </div>
   </div>

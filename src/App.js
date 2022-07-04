@@ -10,6 +10,7 @@ import PublicRoute from './components/createroute/PublicRouter';
 import PrivetRoute from './components/createroute/PrivetRouter';
 import PageNotFound from './components/page/PageNotFound';
 import Users from './components/page/Users';
+import Calender from './components/page/Calender';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
     <DashbordMenu />
       <Switch>
         <PrivetRoute exact path='/' component={Home} />
+        <PrivetRoute exact path='/calender' component={Calender} />
         <PrivetRoute exact path='/user' component={Users} />
         <PublicRoute exact path='/login' component={Login} />
         <PublicRoute exact path='/signup' component={Signup} />

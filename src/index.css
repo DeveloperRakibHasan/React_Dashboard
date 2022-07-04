@@ -38,3 +38,4 @@ td{
 }
 
 tr{ @apply w-full text-center border rounded-lg mb-1 border-[#f5f5f9]}
+.react-calendar{@apply w-full}

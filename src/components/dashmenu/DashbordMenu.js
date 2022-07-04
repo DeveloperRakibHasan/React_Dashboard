@@ -71,7 +71,7 @@ function DashbordMenu() {
 
                         <p className='py-10 text-gray-400 text-[16px]'>APPS & PAGES</p>
 
-                        <NavLink exact to='/' className='flex mb-1 items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-400'>
+                        <NavLink exact to='/calender' className='flex mb-1 items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-400'>
                             <FaRegCalendarAlt className='mr-2' />
                              Calendar
                         </NavLink>
