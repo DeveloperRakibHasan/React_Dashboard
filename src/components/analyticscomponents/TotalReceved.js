@@ -32,20 +32,15 @@ function TotalReceved() {
             enabled: false
           },
           stroke: {
-            width: 4,
+            width: 10,
             colors: ["#fff"]
           },
-          
-          yaxis: {
-            min: -5,
-            max: 5,
-        },
       
     }})
 
     const [radialbar] = useState({
           
-            series: [67],
+            series: [68],
             options: {
               chart: {
                 height: 350,
@@ -60,11 +55,11 @@ function TotalReceved() {
                     name: {
                       fontSize: '16px',
                       color: undefined,
-                      offsetY: 120
+                    //   offsetY: 120
                     },
                     value: {
-                      offsetY: 76,
-                      fontSize: '22px',
+                    //   offsetY: 76,
+                      fontSize: '28px',
                       color: undefined,
                       formatter: function (val) {
                         return val + "%";
@@ -76,16 +71,16 @@ function TotalReceved() {
               fill: {
                 type: 'gradient',
                 gradient: {
-                    shade: 'dark',
-                    shadeIntensity: 0.15,
+                    shade: 'sky',
+                    shadeIntensity: 0.78,
                     inverseColors: false,
                     opacityFrom: 1,
                     opacityTo: 1,
-                    stops: [0, 50, 65, 91]
+                    stops: [0, 91]
                 },
               },
               stroke: {
-                dashArray: 4
+                dashArray: 6
               },
               labels: ['Median Ratio'],
             },
@@ -95,7 +90,7 @@ function TotalReceved() {
     <div className='bg-white rounded-xl p-6 box-shadow-1 ml-8 mt-8 col-span-2'>
         <h2>Total Receved</h2>
         <div className='flex gap-10'>
-            <div className='border-r-2 pr-8'><ReactApexChart options={twobar.options} series={twobar.series} type="bar" height='100%' width={400} /></div>
+            <div className='border-r-2 pr-8'><ReactApexChart options={twobar.options} series={twobar.series} type="bar" height={400} width={550} /></div>
             <div className='w-full text-center'>
                 <select className='outline-none bg-gray-200 p-2 rounded-md'>
                     <option>845E</option>
@@ -104,7 +99,7 @@ function TotalReceved() {
                 <div>
                 <ReactApexChart options={radialbar.options} series={radialbar.series} type="radialBar" height={350} />
                 </div>
-                <div className='flex gap-10'>
+                <div className='flex gap-10 mt-10'>
                     <div className='flex gap-2 items-center'>
                         <FcFile className='text-[40px]'/>
                         <h2 className='font-bold'>84.56K <br></br><span className='font-normal'>Wallet</span></h2>
