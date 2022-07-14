@@ -34,15 +34,15 @@ function DashbordMenu() {
             <span className='text-white w-full flex justify-center mb-4 text-[26px] font-semibold uppercase border-b py-3 bg-[#6A6CF6]'>{currentUser.displayName}</span>
                <div>
                     <nav className='px-4 pb-6'>
-                        <NavLink onClick={()=>setDashboard(!dashboard)} exact to='/' className={dashboard ? 'flex mb-1 justify-between items-center px-4 py-3 bg-[#E7E7FE]  text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500':'flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'}>
+                        <Link onClick={()=>setDashboard(!dashboard)} className={dashboard ? 'flex mb-1 justify-between items-center px-4 py-3 bg-[#E7E7FE]  text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500':'flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'}>
                             <span className='flex items-center py-1'>
                             <BiHomeCircle className='mr-2' />
                              Dashboards
                             </span>
                             {dashboard ? (<span><FaAngleDown /></span>):(<span><FaAngleRight /></span>)}
-                        </NavLink>
+                        </Link>
                         <ul className={dashboard ? 'visible duration-300' : 'hidden'}>
-                        <Link  className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
+                        <Link to='/analytic'  className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                             <BsDot className='mr-2 group-hover:text-blue-400' />
                              Analytics  
                         </Link>
