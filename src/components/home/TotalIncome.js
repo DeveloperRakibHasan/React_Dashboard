@@ -103,14 +103,6 @@ function TotalIncome() {
           stroke: {
             curve: 'straight'
           },
-          
-          title: {
-            text: 'Area with Negative Values',
-            align: 'left',
-            style: {
-              fontSize: '14px'
-            }
-          },
           xaxis: {
             type: 'datetime',
             axisBorder: {

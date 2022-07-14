@@ -20,7 +20,7 @@ function Navbar() {
 
     const {currentUser, logout} = useAuth();
   return (
-    <div className='py-5 px-6 fixed bg-white w-full z-[9999]'>
+    <div className='py-5 px-6 fixed bg-white box-shadow w-full z-[9999]'>
         <div className='flex justify-between'>
             <NavLink exact to='/' className='flex items-center'>
                 <SiDash className='text-[30px]' />

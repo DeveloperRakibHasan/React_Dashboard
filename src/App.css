@@ -710,16 +710,20 @@ video {
   margin-right: 0.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
 
 .mb-3 {
   margin-bottom: 0.75rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .mt-6 {
@@ -778,6 +782,10 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
@@ -810,20 +818,16 @@ video {
   width: 8rem;
 }
 
+.w-\[600px\] {
+  width: 600px;
+}
+
 .w-6\/12 {
   width: 50%;
 }
 
 .w-8 {
   width: 2rem;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
-}
-
-.w-\[600px\] {
-  width: 600px;
 }
 
 .cursor-pointer {
@@ -866,20 +870,20 @@ video {
   gap: 0.5rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
-}
-
 .gap-8 {
   gap: 2rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .overflow-scroll {
@@ -890,12 +894,12 @@ video {
   border-radius: 0.75rem;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-2xl {
@@ -952,6 +956,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-sky-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 230 253 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#D8E8EE\] {
   --tw-bg-opacity: 1;
   background-color: rgb(216 232 238 / var(--tw-bg-opacity));
@@ -965,6 +974,26 @@ video {
 .bg-\[\#F5F5F9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 249 / var(--tw-bg-opacity));
+}
+
+.bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 249 195 / var(--tw-bg-opacity));
 }
 
 .bg-green-500 {
@@ -986,16 +1015,20 @@ video {
   padding: 1.5rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .p-4 {
@@ -1067,10 +1100,6 @@ video {
   padding-top: 65px;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1095,12 +1124,12 @@ video {
   font-size: 40px;
 }
 
-.text-\[20px\] {
-  font-size: 20px;
-}
-
 .text-\[24px\] {
   font-size: 24px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
 }
 
 .text-\[30px\] {
@@ -1157,6 +1186,11 @@ video {
   color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
+.text-\[\#6C798B\] {
+  --tw-text-opacity: 1;
+  color: rgb(108 121 139 / var(--tw-text-opacity));
+}
+
 .text-\[\#6A6CF6\] {
   --tw-text-opacity: 1;
   color: rgb(106 108 246 / var(--tw-text-opacity));
@@ -1172,9 +1206,19 @@ video {
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-.text-\[\#6C798B\] {
+.text-gray-600 {
   --tw-text-opacity: 1;
-  color: rgb(108 121 139 / var(--tw-text-opacity));
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-\[\#8CDA55\] {
@@ -1192,11 +1236,6 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -1204,6 +1243,12 @@ video {
 
 .opacity-0 {
   opacity: 0;
+}
+
+.blur {
+  --tw-blur: blur(8px);
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .duration-300 {
@@ -1229,6 +1274,22 @@ tr {
 
 .react-calendar {
   width: 100%;
+}
+
+tr {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-width: 0px;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+tr::nth-chaild(1) {
+  border-bottom-width: 2px;
+  padding-bottom: 1rem;
 }
 
 .hover\:bg-\[\#E7E7FE\]:hover {

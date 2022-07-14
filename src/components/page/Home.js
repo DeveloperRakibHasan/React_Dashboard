@@ -9,6 +9,10 @@ import Expences from '../home/Expences';
 import Transactions from '../home/Transactions';
 import TotalIncome from '../home/TotalIncome';
 import SliderReview from '../home/SliderReview';
+import Perfomence from '../home/Perfomence';
+import CurrentRate from '../home/CurrentRate';
+import ExpencesKeyword from '../home/ExpencesKeyword';
+import UserOrderList from '../home/UserOrderList';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from "swiper";
@@ -74,6 +78,15 @@ const sliderArray = [
           <Transactions />
         </div>
         <TotalIncome />
+      </div>
+      <div className='grid grid-flow-row grid-cols-3 gap-8 mx-8 pb-10'>
+        <Perfomence />
+        <CurrentRate />
+        <ExpencesKeyword />
+      </div>
+      <div className='grid grid-flow-row grid-cols-3 gap-8 mx-8 pb-10'>
+        <UserOrderList />
+        
       </div>
       <div className='mx-8 bg-white rounded-xl p-6'>
       <div className='flex justify-between items-center'>
