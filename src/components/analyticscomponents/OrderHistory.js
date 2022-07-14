@@ -73,7 +73,7 @@ function OrderHistory() {
     <div className='bg-white rounded-xl box-shadow-1'>
        <div className='p-6'>
             <h4>Order</h4>
-            <h2 className='text-gray-500'>276K</h2>
+            <h2 className='text-gray-500 text-[28px] font-semibold'>276K</h2>
        </div>
         <div className='w-full'>
             <ResponsiveContainer width="100%" height={100}>
