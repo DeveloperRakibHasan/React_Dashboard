@@ -13,6 +13,7 @@ import Perfomence from '../home/Perfomence';
 import CurrentRate from '../home/CurrentRate';
 import ExpencesKeyword from '../home/ExpencesKeyword';
 import UserOrderList from '../home/UserOrderList';
+import TotalBalance from '../home/TotalBalance';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from "swiper";
@@ -60,7 +61,7 @@ const sliderArray = [
 
   return (
     <>
-    <div className='bg-[#F5F5F9] pt-[65px] pb-10 ml-[16.66%]'>
+    <div className='bg-[#F5F5F9] pt-[65px] pb-8 ml-[16.66%]'>
       <div className='grid grid-flow-row grid-cols-3 gap-8 my-8 mx-8'>
         <BestSell />
         <div className='bg-white rounded-xl p-6 box-shadow-1 col-span-2'>
@@ -70,7 +71,7 @@ const sliderArray = [
            </div>
         </div>
       </div>
-      <div className='grid grid-flow-row grid-cols-3 gap-8 mx-8 pb-10'>
+      <div className='grid grid-flow-row grid-cols-3 gap-8 mx-8 pb-8'>
         <div className='grid grid-flow-row grid-cols-2 gap-8'>
           <Salles />
           <Profite />
@@ -79,14 +80,14 @@ const sliderArray = [
         </div>
         <TotalIncome />
       </div>
-      <div className='grid grid-flow-row grid-cols-3 gap-8 mx-8 pb-10'>
+      <div className='grid grid-flow-row grid-cols-3 gap-8 mx-8 pb-8'>
         <Perfomence />
         <CurrentRate />
         <ExpencesKeyword />
       </div>
-      <div className='grid grid-flow-row grid-cols-3 gap-8 mx-8 pb-10'>
+      <div className='grid grid-flow-row grid-cols-3 gap-8 mx-8 pb-8'>
         <UserOrderList />
-        
+        <TotalBalance />
       </div>
       <div className='mx-8 bg-white rounded-xl p-6'>
       <div className='flex justify-between items-center'>

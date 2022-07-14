@@ -43,4 +43,4 @@ tr{ @apply w-full text-center border rounded-lg mb-1 border-[#f5f5f9]}
 tr{
   @apply w-full flex justify-between items-center text-center border-0 text-gray-400
 }
-tr::nth-chaild(1){@apply border-b-2 pb-4}
+td{@apply inline-block relative text-left}

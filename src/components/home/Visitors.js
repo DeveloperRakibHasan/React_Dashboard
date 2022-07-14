@@ -13,7 +13,7 @@ function Visitors() {
         {
           "name": "M",
           "uv": 3000,
-          "pv": 1398
+          "pv": 4398
         },
         {
           "name": "T",

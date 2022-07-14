@@ -10,7 +10,7 @@ function Balance() {
         <h2 className='text-[24px] font-semibold text-[#5A697D] mb-2'>724K</h2>
         <span className='p-1 rounded-md bg-sky-200'>+8.00%</span>
         <div className='mt-4'>
-        <p>Your Profit</p>
+        <p className='mb-1'>Your Profit</p>
         <Line percent={78} strokeWidth={8} trailWidth={8} strokeColor="#08C4EC" trailColor='#fff' />
         </div>
     </div>
