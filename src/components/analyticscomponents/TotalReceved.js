@@ -39,51 +39,51 @@ function TotalReceved() {
     }})
 
     const [radialbar] = useState({
-          
-            series: [68],
-            options: {
-              chart: {
-                height: 350,
-                type: 'radialBar',
-                offsetY: -10
-              },
-              plotOptions: {
-                radialBar: {
-                  startAngle: -135,
-                  endAngle: 135,
-                  dataLabels: {
-                    name: {
-                      fontSize: '16px',
-                      color: undefined,
-                    //   offsetY: 120
-                    },
-                    value: {
-                    //   offsetY: 76,
-                      fontSize: '28px',
-                      color: undefined,
-                      formatter: function (val) {
-                        return val + "%";
-                      }
-                    }
-                  }
-                }
-              },
-              fill: {
-                type: 'gradient',
-                gradient: {
-                    shade: 'sky',
-                    shadeIntensity: 0.78,
-                    inverseColors: false,
-                    opacityFrom: 1,
-                    opacityTo: 1,
-                    stops: [0, 91]
-                },
-              },
-              stroke: {
-                dashArray: 6
-              },
-              labels: ['Median Ratio'],
+
+        series: [68],
+        options: {
+            chart: {
+            height: 350,
+            type: 'radialBar',
+            offsetY: -10
             },
+            plotOptions: {
+            radialBar: {
+                startAngle: -135,
+                endAngle: 135,
+                dataLabels: {
+                name: {
+                    fontSize: '16px',
+                    color: undefined,
+                //   offsetY: 120   //Radial bar text  Position change
+                },
+                value: {
+                //   offsetY: 76, //Radial bar Value Number Position change
+                    fontSize: '28px',
+                    color: undefined,
+                    formatter: function (val) {
+                    return val + "%";
+                    }
+                }
+                }
+            }
+            },
+            fill: {
+            type: 'gradient',
+            gradient: {
+                shade: 'sky',
+                shadeIntensity: 0.78,
+                inverseColors: false,
+                opacityFrom: 1,
+                opacityTo: 1,
+                stops: [0, 91]
+            },
+            },
+            stroke: {
+            dashArray: 6
+            },
+            labels: ['Median Ratio'],
+        },
     })
 
   return (

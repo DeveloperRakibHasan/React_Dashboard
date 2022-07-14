@@ -7,14 +7,17 @@ function UserOrderList() {
   return (
     <div className='bg-white rounded-xl p-6 box-shadow-1 col-span-2'>
         <table className='w-full'>
-           <tr>
+          <thead>
+          <tr>
             <th>Name</th>
             <th>Item</th>
             <th>Value</th>
             <th>Status</th>
             <th>Action</th>
            </tr>
-           <tr>
+          </thead>
+          <tbody>
+          <tr>
             <td className='flex gap-2 items-center'><FiUser />Rakib</td>
             <td>Apple</td>
             <td>$500</td>
@@ -50,6 +53,7 @@ function UserOrderList() {
             <td className='p-2 bg-yellow-100 rounded-md'>Panding...</td>
             <td> <BiDotsVerticalRounded className=' cursor-pointer' /></td>
            </tr>
+          </tbody>
         </table>
     </div>
   )
