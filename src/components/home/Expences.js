@@ -39,7 +39,7 @@ function Expences() {
       }) 
   return (
     <div className='bg-white rounded-xl p-6 box-shadow-1'>
-        <h2 className='text-[24px] font-semibold text-[#5A697D]'>Expenses</h2>
+        <h2 className='2xl:text-[24px] xl:text-[20px] font-semibold text-[#5A697D]'>Expenses</h2>
         <div>
           <ReactApexChart options={percentencedata.options} series={percentencedata.series} type="radialBar" />
         </div>

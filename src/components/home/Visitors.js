@@ -45,12 +45,12 @@ function Visitors() {
   return (
     <div className='mx-6'>
     <div className='flex justify-between'>
-      <h6 className='text-[22px] font-medium text-gray-400'>New visitors</h6>
+      <h6 className='2xl:text-[22px] xl:text-[20px] font-medium text-gray-400'>New visitors</h6>
       <p className='text-gray-400'>Last Week</p>
     </div>
    <div className='flex justify-between items-end'>
     <div>
-    <h2 className='text-[40px] text-[#5A697D] font-medium'>23%</h2>
+    <h2 className='2xl:text-[40px] xl:text-[36px] text-[#5A697D] font-medium'>23%</h2>
     <p className='flex items-center font-medium text-red-500'>
       <HiOutlineArrowSmDown />
       -13.24%
@@ -60,7 +60,7 @@ function Visitors() {
     <ResponsiveContainer width='100%' height={130}>
       <BarChart data={weekdata}>
         <CartesianGrid />
-        <XAxis dataKey="name" />
+        <XAxis fontSize={14} dataKey="name" />
         <YAxis />
         <Tooltip />
         <Legend />

@@ -14,6 +14,7 @@ import { FiUser } from "react-icons/fi";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { MdOutlineFindInPage } from "react-icons/md";
 import { BiLockOpenAlt } from "react-icons/bi";
+// import { FaAngleLeft } from "react-icons/fa";
 
 function DashbordMenu() {
     const {currentUser} = useAuth();
@@ -26,12 +27,20 @@ function DashbordMenu() {
     const [auth, setAuth] = useState(false)
     const [wizer, setWizer] = useState(false)
 
+    // const [toggle, setToggle] = useState(false)
+
+
+
   return (
     <>
-        { currentUser ? (
-        <div className='w-2/12 pt-[70px] fixed'>
-            <div className='bg-[#fff] h-screen overflow-scroll pb-10'>
-            <span className='text-white w-full flex justify-center mb-4 text-[26px] font-semibold uppercase border-b py-3 bg-[#6A6CF6]'>{currentUser.displayName}</span>
+       {/* <div className={!toggle ? 'ml-[-16.66%] w-2/12 relative duration-500' : 'ml-0 w-2/12 relative duration-500'}>
+       <div  onClick={()=>setToggle(!toggle)} className='duration-500 absolute top-[69.5px] xl:block 2xl:hidden right-[-28px] cursor-pointer py-6 px-2 bg-[#6A6CF6] text-white z-20'>
+       { toggle ? <FaAngleLeft /> : <FaAngleRight />}
+        </div> */}
+       { currentUser ? (
+        <div className='2xl:w-2/12 pt-[70px] xm:hidden 2xl:block 2xl:fixed'>
+            <div className='bg-[#fff] relative h-screen overflow-scroll pb-10'>
+                <span className='text-white w-full flex justify-center mb-4 text-[26px] font-semibold uppercase border-b py-3 bg-[#6A6CF6]'>{currentUser.displayName}</span>
                <div>
                     <nav className='px-4 pb-6'>
                         <Link onClick={()=>setDashboard(!dashboard)} className={dashboard ? 'flex mb-1 justify-between items-center px-4 py-3 bg-[#E7E7FE]  text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500':'flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'}>
@@ -180,6 +189,7 @@ function DashbordMenu() {
         ):(
             <div className=' hidden'></div>
         )}
+       {/* </div> */}
     </>
    
   )

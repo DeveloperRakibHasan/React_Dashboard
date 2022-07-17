@@ -61,7 +61,7 @@ const sliderArray = [
 
   return (
     <>
-    <div className='bg-[#F5F5F9] pt-[65px] pb-8 ml-[16.66%]'>
+    <div className='bg-[#F5F5F9] pt-[65px] pb-8 2xl:ml-[16.66%]'>
       <div className='grid grid-flow-row grid-cols-3 gap-8 my-8 mx-8'>
         <BestSell />
         <div className='bg-white rounded-xl p-6 box-shadow-1 col-span-2'>
