@@ -44,7 +44,7 @@ function TotalBalance() {
   return (
     <div className='bg-white rounded-xl p-6 box-shadow-1'>
         <div className='flex justify-between mb-6'>
-            <span className='text-[24px] font-semibold text-[#5A697D]'>Total Balance</span>
+            <span className='xl:text-[24px] font-semibold text-[#5A697D]'>Total Balance</span>
             <BiDotsVerticalRounded />
         </div>
         <div className='flex gap-10'>

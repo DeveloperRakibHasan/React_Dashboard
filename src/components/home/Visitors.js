@@ -50,7 +50,7 @@ function Visitors() {
     </div>
    <div className='flex justify-between items-end'>
     <div>
-    <h2 className='2xl:text-[40px] xl:text-[36px] text-[#5A697D] font-medium'>23%</h2>
+    <h2 className='2xl:text-[40px] lg:text-[36px] text-[#5A697D] font-medium'>23%</h2>
     <p className='flex items-center font-medium text-red-500'>
       <HiOutlineArrowSmDown />
       -13.24%

@@ -38,12 +38,12 @@ function Expences() {
       }
       }) 
   return (
-    <div className='bg-white rounded-xl p-6 box-shadow-1'>
-        <h2 className='2xl:text-[24px] xl:text-[20px] font-semibold text-[#5A697D]'>Expenses</h2>
-        <div>
+    <div className='bg-white rounded-xl 2xl:p-6 lg:p-4 box-shadow-1'>
+        <h2 className='2xl:text-[24px] lg:text-[18px] font-semibold text-[#5A697D]'>Expenses</h2>
+        <div className='mt-2'>
           <ReactApexChart options={percentencedata.options} series={percentencedata.series} type="radialBar" />
         </div>
-        <span className='text-[#A3ACB7]'>
+        <span className='text-[#A3ACB7] 2xl:text-[16px] xl:text-[14px] lg:text-[12px]'>
         $21k Expenses more then last month
         </span>
     </div>

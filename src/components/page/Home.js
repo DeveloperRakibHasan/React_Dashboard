@@ -62,7 +62,7 @@ const sliderArray = [
   return (
     <>
     <div className='bg-[#F5F5F9] pt-[65px] pb-8 2xl:ml-[16.66%]'>
-      <div className='grid grid-flow-row grid-cols-3 gap-8 my-8 mx-8'>
+      <div className='grid grid-flow-row grid-cols-3 xl:gap-8 lg:gap-6 xl:my-8 xl:mx-8 lg:my-6 mx-6'>
         <BestSell />
         <div className='bg-white rounded-xl p-6 box-shadow-1 col-span-2'>
            <div className='grid grid-flow-row grid-cols-2'>
@@ -71,8 +71,8 @@ const sliderArray = [
            </div>
         </div>
       </div>
-      <div className='grid grid-flow-row grid-cols-3 gap-8 mx-8 pb-8'>
-        <div className='grid grid-flow-row grid-cols-2 gap-8'>
+      <div className='grid grid-flow-row grid-cols-3 xl:gap-8 lg:gap-6 xl:mx-8 xl:pb-8 lg:mx-6 lg:pb-6'>
+        <div className='grid grid-flow-row grid-cols-2 xl:gap-8 lg:gap-6'>
           <Salles />
           <Profite />
           <Expences />
