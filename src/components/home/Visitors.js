@@ -43,14 +43,14 @@ function Visitors() {
       ]
 
   return (
-    <div className='md:mx-6 sm:mx-2'>
+    <div className='md:mx-6 sm:mx-2 sm:mb-0 xm:mb-10'>
     <div className='flex justify-between'>
       <h6 className='2xl:text-[22px] sm:text-[20px] font-medium text-gray-400'>New visitors</h6>
       <p className='text-gray-400'>Last Week</p>
     </div>
    <div className='flex justify-between items-end'>
     <div>
-    <h2 className='2xl:text-[40px] sm:text-[36px] text-[#5A697D] font-medium'>23%</h2>
+    <h2 className='2xl:text-[40px] sm:text-[36px] xm:text-[30px] text-[#5A697D] font-medium'>23%</h2>
     <p className='flex items-center font-medium text-red-500'>
       <HiOutlineArrowSmDown />
       -13.24%

@@ -70,7 +70,7 @@ function Activity() {
         },
       ];
   return (
-    <div className='md:px-6 sm:px-2 border-l'>
+    <div className='md:px-6 sm:px-2 sm:border-l'>
             <div className='flex justify-between items-center'>
               <h6 className='2xl:text-[22px] md:text-[20px] sm:text-[18px] font-medium text-gray-400'>Activity</h6>
               <p className='text-gray-400'>Last Week</p>
