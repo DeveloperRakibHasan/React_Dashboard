@@ -38,11 +38,11 @@ function Signup() {
   return (
     <div>
       <div className='container'>
-        <div className='flex h-screen justify-between items-center'>
-          <div className='w-6/12'>
+        <div className='flex h-full pt-[200px] pb-12 justify-between items-center'>
+          <div className='sm:w-6/12 xm:w-0'>
             <img src={signupimg} alt='' />
           </div>
-          <div className='w-6/12 ml-6'>
+          <div className='sm:w-6/12 xm:w-full sm:ml-6 xm:ml-0'>
             <form onSubmit={handelSubmit}>
               <input required placeholder='name' type='text' className='block w-full box-shadow p-3 rounded-2xl mb-10' />
               <input required value={username} onChange={(e)=> setUsername(e.target.value)} placeholder='username' type='text' className='block w-full box-shadow p-3 rounded-2xl mb-10' />

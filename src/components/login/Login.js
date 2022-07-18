@@ -31,11 +31,11 @@ function Login() {
   return (
     <div>
       <div className='container'>
-        <div className='flex h-screen justify-between items-center'>
-          <div className='w-6/12'>
+        <div className='flex h-full pt-[200px] justify-between items-center'>
+          <div className='sm:w-6/12 xm:w-0'>
             <img src={loginimg} alt='' />
           </div>
-          <div className='w-6/12 ml-6'>
+          <div className='sm:w-6/12 xm:w-full ml-6'>
             <form onSubmit={handelSubmit}>
               <input required value={email} onChange={(e)=> setEmail(e.target.value)} placeholder='@email' type='email' className='block w-full border-l-4 border-green-500 box-shadow p-3 rounded-r-2xl mb-10 focus:outline-none focus:placeholder:text-black' />
               <input required value={password} onChange={(e)=> setPassword(e.target.value)} placeholder='*password' type='password' className='block w-full box-shadow p-3 border-l-4 border-green-500 mb-12 rounded-r-2xl focus:outline-none focus:placeholder:text-black' />
