@@ -16,8 +16,8 @@ function TotalReceved() {
         options: {
           chart: {
             type: 'bar',
-            height: '100%',
-            stacked: true
+            stacked: true,
+            
           },
           colors: ['#7779FF', '#03C3EC'],
           plotOptions: {
@@ -42,8 +42,12 @@ function TotalReceved() {
 
         series: [68],
         options: {
+          responsive: [{           
+            options: {
+              width:'100%'
+            },
+          }],
             chart: {
-            height: 350,
             type: 'radialBar',
             offsetY: -10
             },
@@ -87,17 +91,19 @@ function TotalReceved() {
     })
 
   return (
-    <div className='bg-white rounded-xl p-6 box-shadow-1 ml-8 mt-8 col-span-2'>
+    <div className='bg-white rounded-xl p-6 box-shadow-1 xl:ml-8 xm:ml-6 col-span-2'>
         <h2>Total Receved</h2>
         <div className='flex gap-10'>
-            <div className='border-r-2 pr-8'><ReactApexChart options={twobar.options} series={twobar.series} type="bar" height={400} width={550} /></div>
+            <div className='border-r-2 pr-8 w-full'>
+              <ReactApexChart options={twobar.options} series={twobar.series} type="bar" height={400} width='100%' />
+            </div>
             <div className='w-full text-center'>
                 <select className='outline-none bg-gray-200 p-2 rounded-md'>
                     <option>845E</option>
                     <option>896F</option>
                 </select>
-                <div>
-                <ReactApexChart options={radialbar.options} series={radialbar.series} type="radialBar" height={350} />
+                <div className='w-full'>
+                <ReactApexChart options={radialbar.options} series={radialbar.series} type="radialBar" width="100%" height={350} />
                 </div>
                 <div className='flex gap-10 mt-10'>
                     <div className='flex gap-2 items-center'>

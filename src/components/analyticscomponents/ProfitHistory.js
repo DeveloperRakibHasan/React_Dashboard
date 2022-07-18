@@ -5,7 +5,7 @@ import ProfitRange from './ProfitRange'
 
 function ProfitHistory() {
   return (
-    <div className='grid grid-flow-row grid-cols-2 gap-8 mt-8 mr-8'>
+    <div className='grid grid-flow-row grid-cols-2 xl:gap-8 xm:gap-6 xl:mr-8 xm:mr-6'>
     <SallesDicrement />
     <ProfitGraph />
     <ProfitRange />

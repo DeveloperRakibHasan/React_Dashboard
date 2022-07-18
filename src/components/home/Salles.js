@@ -12,7 +12,7 @@ function Salles() {
         </div>
         <p className='text-[#6C798B]'>Sales</p>
         <h2 className='2xl:text-[24px] xm:text-[20px] font-semibold text-[#5A697D]'>$4,679</h2>
-        <p className='flex items-center 2xl:text-[16px] xl:text-[14px] font-medium text-[#8CDA55]'>
+        <p className='flex items-center 2xl:text-[16px] xl:text-[14px] font-medium text-[#8CDA55] mt-4'>
             <HiOutlineArrowSmUp />
             +28.42%
         </p>
