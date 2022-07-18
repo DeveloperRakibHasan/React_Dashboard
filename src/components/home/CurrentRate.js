@@ -42,14 +42,14 @@ function CurrentRate() {
   })
 
   return (
-    <div className='w-full h-full bg-white box-shadow-1 rounded-xl xl:p-8 md:p-6'>
+    <div className='w-full h-full bg-white box-shadow-1 rounded-xl xl:p-8 xm:p-6 xm:col-span-2 md:col-auto'>
         <div className='flex justify-between'>
-            <span className='2xl:text-[24px] md:text-[20px] font-semibold text-[#5A697D]'>Current Rate</span>
+            <span className='2xl:text-[24px] md:text-[20px] xm:text-[18px] font-semibold text-[#5A697D]'>Current Rate</span>
             <BiDotsVerticalRounded />
         </div>
-        <p className='text-gray-400 2xl:text-[16px] md:text-[14px]'>Current Rate in the month</p>
-        <div className='flex gap-2'>
-          <div className='flex gap-2 items-center'>
+        <p className='text-gray-400 2xl:text-[16px] xm:text-[14px]'>Current Rate in the month</p>
+        <div className='md:flex gap-2 xm:block'>
+          <div className='flex gap-2 items-center md:mt-0 xm:mt-4'>
             <h1 className='text-[30px] font-bold text-gray-600'>8.72%</h1>
             <span className='text-green-500'>4.8%</span>
           </div>
@@ -61,7 +61,7 @@ function CurrentRate() {
             <div className='flex justify-between mb-4'>
               <div>
                 <p className='2xl:text-[18px] md:text-[16px] text-gray-400'>Add to Card</p>
-                <span className='2xl:text-[16px] md:text-[14px] text-gray-300'>$32 per hour</span>
+                <span className='2xl:text-[16px] xm:text-[14px] text-gray-300'>$32 per hour</span>
               </div>
               <div className='flex items-center gap-2 text-green-500'>
               <HiOutlineArrowSmUp />
@@ -71,7 +71,7 @@ function CurrentRate() {
             <div className='flex justify-between mb-4'>
               <div>
                 <p className='2xl:text-[18px] md:text-[16px] text-gray-400'>Add to Bank</p>
-                <span className='2xl:text-[16px] md:text-[14px] text-gray-300'>$14 per hour</span>
+                <span className='2xl:text-[16px] xm:text-[14px] text-gray-300'>$14 per hour</span>
               </div>
               <div className='flex items-center gap-2 text-red-500'>
               <HiOutlineArrowSmUp />
@@ -81,7 +81,7 @@ function CurrentRate() {
             <div className='flex justify-between'>
               <div>
                 <p className='2xl:text-[18px] md:text-[16px] text-gray-400'>Add to Wallet</p>
-                <span className='2xl:text-[16px] md:text-[14px] text-gray-300'>$44 per hour</span>
+                <span className='2xl:text-[16px] xm:text-[14px] text-gray-300'>$44 per hour</span>
               </div>
               <div className='flex items-center gap-2 text-green-500'>
               <HiOutlineArrowSmUp />

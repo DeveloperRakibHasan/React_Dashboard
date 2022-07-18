@@ -28,9 +28,9 @@ function Profite() {
       ]
 
   return (
-    <div className='bg-white w-full rounded-xl 2xl:p-6 md:p-4 box-shadow-1'>
+    <div className='bg-white w-full rounded-xl 2xl:p-6 xm:p-4 box-shadow-1'>
         <p className='text-[#6C798B] 2xl:text-[18px] lg:text-[16px]'>Profit</p>
-        <h2 className='2xl:text-[24px] md:text-[20px] font-semibold text-[#5A697D]'>624K</h2>
+        <h2 className='2xl:text-[24px] xm:text-[20px] font-semibold text-[#5A697D]'>624K</h2>
         <div>
         <ResponsiveContainer width='100%' height={80}>
         <BarChart data={bardata}>

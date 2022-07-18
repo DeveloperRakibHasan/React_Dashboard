@@ -50,7 +50,7 @@ function Perfomence() {
     })
     
   return (
-    <div className='w-full h-full bg-white box-shadow-1 rounded-xl xl:p-8 md:p-6'>
+    <div className='w-full h-full bg-white box-shadow-1 rounded-xl xl:p-8 xm:p-6 xm:col-span-2 md:col-auto'>
      <div className='flex justify-between mb-4'>
         <span className='2xl:text-[24px] md:text-[20px] font-semibold text-[#5A697D]'>Perfomence</span>
         <BiDotsVerticalRounded />

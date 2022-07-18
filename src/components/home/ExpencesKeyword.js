@@ -5,7 +5,7 @@ import ExpencesProfit from './ExpencesProfit'
 
 function ExpencesKeyword() {
   return (
-    <div className='grid grid-flow-row grid-cols-2 xl:gap-8 md:gap-6'>
+    <div className='grid grid-flow-row grid-cols-2 xl:gap-8 xm:gap-6 xm:col-span-2 md:col-auto'>
         <Salles />
         <Balance />
         <ExpencesProfit />

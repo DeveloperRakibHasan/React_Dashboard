@@ -42,19 +42,19 @@ function TotalBalance() {
         }
     })
   return (
-    <div className='bg-white rounded-xl p-6 box-shadow-1 lg:col-auto md:col-span-2'>
+    <div className='bg-white rounded-xl p-6 box-shadow-1 lg:col-auto sm:col-span-2'>
         <div className='flex justify-between mb-6'>
-            <span className='xl:text-[24px] font-semibold text-[#5A697D]'>Total Balance</span>
+            <span className='xl:text-[24px] md:text-[20px] xm:text-[18px] font-semibold text-[#5A697D]'>Total Balance</span>
             <BiDotsVerticalRounded />
         </div>
-        <div className='flex xl:gap-10 md:gap-6'>
+        <div className='flex xl:gap-10 xm:gap-6'>
             <div className='flex gap-2 items-center'>
-                <FcFile className='xl:text-[40px] md:text-[34px]'/>
-                <h2 className='font-bold'>84.56K <br></br><span className='font-normal xl:text-[16px] md:text-[14px]'>Wallet</span></h2>
+                <FcFile className='xl:text-[40px] xm:text-[34px]'/>
+                <h2 className='font-bold'>84.56K <br></br><span className='font-normal xl:text-[16px] xm:text-[14px]'>Wallet</span></h2>
             </div>
             <div className='flex gap-4 items-center'>
-               <span className='p-2 bg-gray-200 rounded-md'> <FiDollarSign className='xl:text-[26px] md:text-[20px]'/></span>
-                <h2 className='font-bold'>84.56K <br></br><span className='font-normal xl:text-[16px] md:text-[14px]'>Paypal</span></h2>
+               <span className='p-2 bg-gray-200 rounded-md'> <FiDollarSign className='xl:text-[26px] xm:text-[20px]'/></span>
+                <h2 className='font-bold'>84.56K <br></br><span className='font-normal xl:text-[16px] xm:text-[14px]'>Paypal</span></h2>
             </div>
         </div>
         <div className='border-b-4'>
