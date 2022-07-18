@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import ReactApexChart from 'react-apexcharts'
+import LinesEllipsis from 'react-lines-ellipsis'
 import '../style/custom.css'
 
 function Expences() {
@@ -38,13 +39,19 @@ function Expences() {
       }
       }) 
   return (
-    <div className='bg-white rounded-xl 2xl:p-6 lg:p-4 box-shadow-1'>
+    <div className='bg-white rounded-xl 2xl:p-6 md:p-4 box-shadow-1'>
         <h2 className='2xl:text-[24px] lg:text-[18px] font-semibold text-[#5A697D]'>Expenses</h2>
         <div className='mt-2'>
           <ReactApexChart options={percentencedata.options} series={percentencedata.series} type="radialBar" />
         </div>
         <span className='text-[#A3ACB7] 2xl:text-[16px] xl:text-[14px] lg:text-[12px]'>
-        $21k Expenses more then last month
+        <LinesEllipsis
+          text=' $21k Expenses more then last month'
+          maxLine='2'
+          ellipsis='...'
+          trimRight
+          basedOn='letters'
+        />
         </span>
     </div>
   )

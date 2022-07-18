@@ -50,9 +50,7 @@ function ExpencesProfit() {
             <span className='text-green-500'>+8.00%</span>
         </div>
         <div>
-
         <ReactApexChart options={twobar.options} series={twobar.series} type="bar" height='100%' />
-    
         </div>
     </div>
   )

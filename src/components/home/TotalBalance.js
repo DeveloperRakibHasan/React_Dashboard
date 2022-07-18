@@ -42,30 +42,30 @@ function TotalBalance() {
         }
     })
   return (
-    <div className='bg-white rounded-xl p-6 box-shadow-1'>
+    <div className='bg-white rounded-xl p-6 box-shadow-1 lg:col-auto md:col-span-2'>
         <div className='flex justify-between mb-6'>
             <span className='xl:text-[24px] font-semibold text-[#5A697D]'>Total Balance</span>
             <BiDotsVerticalRounded />
         </div>
-        <div className='flex gap-10'>
+        <div className='flex xl:gap-10 md:gap-6'>
             <div className='flex gap-2 items-center'>
-                <FcFile className='text-[40px]'/>
-                <h2 className='font-bold'>84.56K <br></br><span className='font-normal'>Wallet</span></h2>
+                <FcFile className='xl:text-[40px] md:text-[34px]'/>
+                <h2 className='font-bold'>84.56K <br></br><span className='font-normal xl:text-[16px] md:text-[14px]'>Wallet</span></h2>
             </div>
             <div className='flex gap-4 items-center'>
-               <span className='p-2 bg-gray-200 rounded-md'> <FiDollarSign className='text-[26px]'/></span>
-                <h2 className='font-bold'>84.56K <br></br><span className='font-normal'>Paypal</span></h2>
+               <span className='p-2 bg-gray-200 rounded-md'> <FiDollarSign className='xl:text-[26px] md:text-[20px]'/></span>
+                <h2 className='font-bold'>84.56K <br></br><span className='font-normal xl:text-[16px] md:text-[14px]'>Paypal</span></h2>
             </div>
         </div>
         <div className='border-b-4'>
           <ReactApexChart options={line.options} series={line.series} type="line" height='100%' />
         </div>
         <div className='flex justify-between items-center gap-10 mt-4'>
-            <div>
+            <div className='xl:text-[16px] lg:text-[14px]'>
                 <p>Save your favorite articles to read offline.</p>
                 <span>Wikipedia is hosted by the Wikimedia</span>
             </div>
-            <span className='p-3 cursor-pointer bg-yellow-100 rounded-md'><FiChevronRight /></span>
+            <span className='p-3 cursor-pointer bg-yellow-100 hover:bg-yellow-200 rounded-md'><FiChevronRight /></span>
         </div>
     </div>
   )

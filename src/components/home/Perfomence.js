@@ -50,14 +50,13 @@ function Perfomence() {
     })
     
   return (
-    <div className='w-full h-full bg-white box-shadow-1 rounded-xl p-8'>
+    <div className='w-full h-full bg-white box-shadow-1 rounded-xl xl:p-8 md:p-6'>
      <div className='flex justify-between mb-4'>
-        <span className='2xl:text-[24px] xl:text-[20px] font-semibold text-[#5A697D]'>Perfomence</span>
+        <span className='2xl:text-[24px] md:text-[20px] font-semibold text-[#5A697D]'>Perfomence</span>
         <BiDotsVerticalRounded />
         </div>
         <div>
         <ReactApexChart options={radar.options} series={radar.series} type="radar" height={300} />
-    
         </div>
     </div>
   )

@@ -157,7 +157,7 @@ function TotalIncome() {
       })
         
   return (
-    <div className='w-full h-full bg-white col-span-2 box-shadow-1 rounded-xl 2xl:p-8 lg:p-4'>
+    <div className='w-full h-full bg-white col-span-2 box-shadow-1 rounded-xl 2xl:p-8 md:p-4'>
           <div className='flex justify-between'>
           <div className='w-[600px]'>
             <h2 className='2xl:text-[24px] lg:text-[20px] font-semibold text-[#5A697D]'>Total income</h2>
@@ -167,14 +167,14 @@ function TotalIncome() {
             <div>
               <div className='flex items-center justify-between'>
                 <div className='mr-10'>
-                  <h4 className='2xl:text-[26px] lg:text-[20px] text-[#5A697D]'>Report</h4>
-                  <p className='text-[#5A697D] 2xl:text-[18px] lg:text-[14px]'>Monthly Avr. $45,578k</p>
+                  <h4 className='2xl:text-[26px] md:text-[20px] text-[#5A697D]'>Report</h4>
+                  <p className='text-[#5A697D] 2xl:text-[18px] md:text-[14px]'>Monthly Avr. $45,578k</p>
                 </div>
                 <BiDotsVerticalRounded className='text-[20px] text-[#5A697D]' />
               </div>
-              <div className='flex justify-between items-end gap-2 mt-4 bg-[#F5F5F9] 2xlp-4 lg:p-3 rounded-lg'>
+              <div className='flex justify-between items-end gap-2 mt-4 bg-[#F5F5F9] 2xlp-4 md:p-3 rounded-lg'>
                 <div className='flex gap-3'>
-                    <span className='2xl:p-4 lg:p-3 bg-white rounded-lg'><BsPaypal className='text-[20px]' /></span>
+                    <span className='2xl:p-4 md:p-3 bg-white rounded-lg'><BsPaypal className='text-[20px]' /></span>
                     <div>
                         <p className='text-[#6C798B] font-semibold 2xl:text-[16px] xl:text-[14px]'>Income</p>
                         <h2 className='font-bold 2xl:text-[20px] xl:text-[17px] text-[#5A697D]'>$42,845</h2>
@@ -182,9 +182,9 @@ function TotalIncome() {
                 </div>
                 <span className='text-green-500 2xl:text-[16px] xl:text-[14px]'>+2.34k</span>
               </div>
-              <div className='flex justify-between items-end gap-2 mt-4 bg-[#F5F5F9] 2xlp-4 lg:p-3 rounded-lg'>
+              <div className='flex justify-between items-end gap-2 mt-4 bg-[#F5F5F9] 2xlp-4 md:p-3 rounded-lg'>
                 <div className='flex gap-3'>
-                    <span className='2xl:p-4 lg:p-3 bg-white rounded-lg'><BsBag className='text-[20px]' /></span>
+                    <span className='2xl:p-4 md:p-3 bg-white rounded-lg'><BsBag className='text-[20px]' /></span>
                     <div>
                         <p className='text-[#6C798B] font-semibold 2xl:text-[16px] xl:text-[14px]'>Expences</p>
                         <h2 className='font-bold 2xl:text-[20px] xl:text-[17px] text-[#5A697D]'>$38,658</h2>
@@ -192,9 +192,9 @@ function TotalIncome() {
                 </div>
                 <span className='text-red-500 2xl:text-[16px] xl:text-[14px]'>-1.15k</span>
               </div>
-              <div className='flex justify-between items-end gap-2 mt-4 bg-[#F5F5F9] 2xlp-4 lg:p-3 rounded-lg'>
+              <div className='flex justify-between items-end gap-2 mt-4 bg-[#F5F5F9] 2xlp-4 md:p-3 rounded-lg'>
                 <div className='flex gap-3'>
-                    <span className='2xl:p-4 lg:p-3 bg-white rounded-lg'><GoFileSubmodule className='text-[20px]' /></span>
+                    <span className='2xl:p-4 md:p-3 bg-white rounded-lg'><GoFileSubmodule className='text-[20px]' /></span>
                     <div>
                         <p className='text-[#6C798B] font-semibold 2xl:text-[16px] xl:text-[14px]'>Profit</p>
                         <h2 className='font-bold 2xl:text-[20px] xl:text-[17px] text-[#5A697D]'>$18,220</h2>
