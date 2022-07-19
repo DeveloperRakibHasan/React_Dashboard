@@ -17,7 +17,6 @@ function TotalReceved() {
           chart: {
             type: 'bar',
             stacked: true,
-            
           },
           colors: ['#7779FF', '#03C3EC'],
           plotOptions: {
@@ -32,21 +31,32 @@ function TotalReceved() {
             enabled: false
           },
           stroke: {
-            width: 10,
+            width: 0,
             colors: ["#fff"]
           },
-      
+       
     }})
 
     const [radialbar] = useState({
 
         series: [68],
+        
+        responsive: [{
+          breakpoint: 1280,
+          options: {
+            width: 300,
+            height: 400
+          },
+        },
+        {
+          breakpoint: 992,
+          options: {
+            width: 200,
+            height: 300
+          },
+        },
+      ],
         options: {
-          responsive: [{           
-            options: {
-              width:'100%'
-            },
-          }],
             chart: {
             type: 'radialBar',
             offsetY: -10
@@ -95,7 +105,7 @@ function TotalReceved() {
         <h2>Total Receved</h2>
         <div className='flex gap-10'>
             <div className='border-r-2 pr-8 w-full'>
-              <ReactApexChart options={twobar.options} series={twobar.series} type="bar" height={400} width='100%' />
+              <ReactApexChart options={twobar.options} series={twobar.series} type="bar" height={300} width='100%' />
             </div>
             <div className='w-full text-center'>
                 <select className='outline-none bg-gray-200 p-2 rounded-md'>
@@ -103,7 +113,7 @@ function TotalReceved() {
                     <option>896F</option>
                 </select>
                 <div className='w-full'>
-                <ReactApexChart options={radialbar.options} series={radialbar.series} type="radialBar" width="100%" height={350} />
+                <ReactApexChart options={radialbar.options} series={radialbar.series} type="radialBar" width="100%" height={300} />
                 </div>
                 <div className='flex gap-10 mt-10'>
                     <div className='flex gap-2 items-center'>

@@ -47,7 +47,7 @@ function ProfitRange() {
                 <h2 className='text-[28px] text-gray-600 font-bold'>$84,548K</h2>
             </div>
             <div>
-                <ReactApexChart options={line.options} series={line.series} type="line" height='100%' />
+                <ReactApexChart options={line.options} series={line.series} type="line" width="100%" height='100%' />
             </div>
         </div>
     </div>
