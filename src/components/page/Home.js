@@ -89,11 +89,11 @@ const sliderArray = [
       </div>
       <div className='xl:mx-8 xm:mx-6 bg-white rounded-xl p-6'>
       <div className='flex justify-between items-center'>
-        <h2 className='md:text-[20px] xm:text-[16px] font-semibold'>Property List</h2>
+        <h2 className='md:text-[20px] sm:text-[16px] xm:text-[14px] font-semibold'>Property List</h2>
         <ul className='flex md:gap-2 xm:gap-1 items-center'>
-          <li className='md:px-4 xm:px-2 md:py-2 xm:py-1 md:text-[16px] xm:text-[14px] hover:bg-gray-100 rounded-xl cursor-pointer'>Popular</li>
-          <li className='md:px-4 xm:px-2 md:py-2 xm:py-1 md:text-[16px] xm:text-[14px] hover:bg-gray-100 rounded-xl cursor-pointer'>Recomanded</li>
-          <li className='md:px-4 xm:px-2 md:py-2 xm:py-1 md:text-[16px] xm:text-[14px] hover:bg-gray-100 rounded-xl cursor-pointer'>Newest</li>
+          <li className='md:px-4 sm:px-2 xm:px-1 md:py-2 xm:py-1 md:text-[16px] xm:text-[14px] hover:bg-gray-100 rounded-xl cursor-pointer'>Popular</li>
+          <li className='md:px-4 sm:px-2 xm:px-1 md:py-2 xm:py-1 md:text-[16px] xm:text-[14px] hover:bg-gray-100 rounded-xl cursor-pointer'>Recomanded</li>
+          <li className='md:px-4 sm:px-2 xm:px-1 md:py-2 xm:py-1 md:text-[16px] xm:text-[14px] hover:bg-gray-100 rounded-xl cursor-pointer'>Newest</li>
           <select className='border md:p-2 xm:p-1 md:text-[16px] xm:text-[12px] rounded-lg focus:outline-none'>
             <option>Most Recent</option>
           </select>
