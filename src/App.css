@@ -1644,13 +1644,25 @@ td {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .sm\:border-l {
     border-left-width: 1px;
+  }
+
+  .sm\:border-r-2 {
+    border-right-width: 2px;
   }
 
   .sm\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .sm\:pr-8 {
+    padding-right: 2rem;
   }
 
   .sm\:text-\[18px\] {

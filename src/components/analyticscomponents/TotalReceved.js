@@ -103,8 +103,8 @@ function TotalReceved() {
   return (
     <div className='bg-white rounded-xl p-6 box-shadow-1 xl:ml-8 xm:ml-6 lg:mr-0 xm:mr-6 col-span-2'>
         <h2>Total Receved</h2>
-        <div className='sm:flex gap-10'>
-            <div className='border-r-2 pr-8 w-full'>
+        <div className='sm:flex sm:gap-10'>
+            <div className='sm:border-r-2 pr-8 sm:mb-0 xm:mb-10 w-full'>
               <ReactApexChart options={twobar.options} series={twobar.series} type="bar" height={300} width='100%' />
             </div>
             <div className='w-full text-center'>
