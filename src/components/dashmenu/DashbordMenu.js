@@ -33,12 +33,12 @@ function DashbordMenu() {
 
   return (
     <>
+     { currentUser ? (
        <div className='fixed z-50 w-full'>
         <div className={!toggle ? 'relative 2xl:ml-0 lg:ml-[-34%] md:ml-[-72%] sm:ml-[-140%] xm:ml-[-500%] duration-500' : 'relative xm:ml-[0%] 2xl:ml-[16.66%] duration-500'}>
         <div onClick={()=> setToggle(!toggle)} className='duration-500 absolute top-[69.5px] xl:block 2xl:hidden lg:left-[25%] md:left-[41.66%] sm:left-[58.33%] xm:left-[83.33%] cursor-pointer py-6 px-2 bg-[#6A6CF6] text-white z-50'>
         { toggle ? <FaAngleLeft /> : <FaAngleRight />}
             </div>
-        { currentUser ? (
             <div className='2xl:w-2/12 lg:w-3/12 md:w-5/12 sm:w-7/12 xm:w-10/12 pt-[70px]  2xl:fixed'>
                 <div className='bg-[#fff] relative h-screen overflow-scroll pb-10'>
                     <span className='text-white w-full flex justify-center mb-4 text-[26px] font-semibold uppercase border-b py-3 bg-[#6A6CF6]'>{currentUser.displayName}</span>
@@ -187,11 +187,12 @@ function DashbordMenu() {
                 </div>
                 </div>
             </div>
+            </div>
+       </div>
             ):(
                 <div className=' hidden'></div>
             )}
-        </div>
-       </div>
+       
     </>
    
   )
