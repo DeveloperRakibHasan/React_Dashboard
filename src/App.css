@@ -1079,6 +1079,16 @@ video {
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 
+.bg-red-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+}
+
+.bg-green-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 253 244 / var(--tw-bg-opacity));
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -1944,6 +1954,10 @@ td {
     margin-left: -34%;
   }
 
+  .lg\:mr-8 {
+    margin-right: 2rem;
+  }
+
   .lg\:w-4\/12 {
     width: 33.333333%;
   }
@@ -2106,6 +2120,10 @@ td {
 
   .\32xl\:w-32 {
     width: 8rem;
+  }
+
+  .\32xl\:gap-8 {
+    gap: 2rem;
   }
 
   .\32xl\:rounded-lg {

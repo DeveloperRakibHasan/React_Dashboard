@@ -4,7 +4,7 @@ import Salles from '../home/Salles'
 
 function OrderComponent() {
   return (
-    <div className='grid grid-flow-row grid-cols-2 xl:gap-8 xm:gap-6 xl:mt-8 lg:mt-6 xm:mr-6 md:mr-0 xl:mr-8 lg:mr-6 lg:ml-0 xm:ml-6  xm:col-span-2 md:col-span-1 xm:row-start-2 lg:row-auto'>
+    <div className='grid grid-flow-row grid-cols-2 xl:gap-8 xm:gap-6 xl:mt-8 lg:mt-6 xm:col-span-2 md:col-span-1 xm:row-start-2 lg:row-auto'>
     <OrderHistory />
     <Salles />
     </div>

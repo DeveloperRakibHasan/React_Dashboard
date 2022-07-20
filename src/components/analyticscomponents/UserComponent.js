@@ -6,7 +6,7 @@ import LinesEllipsis from 'react-lines-ellipsis';
 function UserComponent() {
     const { currentUser } = useAuth();
   return (
-    <div className='bg-white rounded-xl p-6 box-shadow-1 xl:ml-8 xm:ml-6 lg:mr-0 xm:mr-6 xl:mt-8 xm:mt-6 col-span-2'>
+    <div className='bg-white rounded-xl p-6 box-shadow-1 xl:mt-8 xm:mt-6 col-span-2'>
    <div className='grid grid-flow-row grid-cols-2'>
    <div>
       <span className='xm:text-[18px] sm:text-[20px] text-green-500 font-semibold'>Congratulations {currentUser.displayName}</span>
