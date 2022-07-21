@@ -74,138 +74,106 @@ function AnalTab() {
   return (
     <div className='w-full h-full bg-white box-shadow-1 rounded-xl xl:p-8 xm:p-6 xm:col-span-2 md:col-auto lg:mr-8 xm:mr-6'>
        <Tabs>
-    <TabList>
-      <Tab>Extansion</Tab>
-      <Tab>E-comarce</Tab>
-      <Tab>Paypal</Tab>
-      <Tab>Payonar</Tab>
-    </TabList>
+        <TabList>
+          <Tab>Extansion</Tab>
+          <Tab>Paypal</Tab>
+          <Tab>Payonar</Tab>
+        </TabList>
 
-    <TabPanel className="mt-10">
-    <div className='flex justify-between mb-10'>
-      <div className='flex gap-4 items-center'>
-          <span className='p-3 bg-[#D8E8EE] rounded-xl'><FcFile/></span>
-        <div>
-            <p className='2xl:text-[18px] md:text-[16px] text-gray-400'> Add to Card </p>
-            <span className='2xl:text-[16px] xm:text-[14px] text-gray-300'>$32 per hour</span>
-        </div>
-      </div>
-      <div className='flex items-center gap-2 t'>
-      <span>8.6%</span>
-      </div>
-    </div>
-    <div className='w-full'>
-      <ResponsiveContainer width="100%" height={300}>
-      <AreaChart
-          data={data}
-          >
-          <defs>
-          <linearGradient id="color-area" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#6A6CF6" stopOpacity={0.5}/>
-              <stop offset="75%" stopColor="#6A6CF6" stopOpacity={0}/>
-          </linearGradient>
-          </defs>
-          <Tooltip />
-          <XAxis dataKey="name" />
-          <Area type="monotone" stroke="#6A6CF6" strokeWidth={1} fill="url(#color-area)" fillOpacity={1} dataKey="Total" />
-      </AreaChart>
-      </ResponsiveContainer> 
-    </div>
-    </TabPanel>
-    <TabPanel>
-    <div className='flex justify-between mb-10'>
-      <div className='flex gap-4 items-center'>
-          <span className='p-3 bg-[#D8E8EE] rounded-xl'><FcFile/></span>
-        <div>
-            <p className='2xl:text-[18px] md:text-[16px] text-gray-400'> Add to Card </p>
-            <span className='2xl:text-[16px] xm:text-[14px] text-gray-300'>$32 per hour</span>
-        </div>
-      </div>
-      <div className='flex items-center gap-2 t'>
-      <span>8.6%</span>
-      </div>
-    </div>
-    <div className='w-full'>
-      <ResponsiveContainer width="100%" height={300}>
-      <AreaChart
-          data={data}
-          >
-          <defs>
-          <linearGradient id="color-area" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#6A6CF6" stopOpacity={0.5}/>
-              <stop offset="75%" stopColor="#6A6CF6" stopOpacity={0}/>
-          </linearGradient>
-          </defs>
-          <Tooltip />
-          <XAxis dataKey="name" />
-          <Area type="monotone" stroke="#6A6CF6" strokeWidth={1} fill="url(#color-area)" fillOpacity={1} dataKey="Total" />
-      </AreaChart>
-      </ResponsiveContainer> 
-    </div>
-    </TabPanel>
-    <TabPanel>
-    <div className='flex justify-between mb-10'>
-      <div className='flex gap-4 items-center'>
-          <span className='p-3 bg-[#D8E8EE] rounded-xl'><FcFile/></span>
-        <div>
-            <p className='2xl:text-[18px] md:text-[16px] text-gray-400'> Add to Card </p>
-            <span className='2xl:text-[16px] xm:text-[14px] text-gray-300'>$32 per hour</span>
-        </div>
-      </div>
-      <div className='flex items-center gap-2 t'>
-      <span>8.6%</span>
-      </div>
-    </div>
-    <div className='w-full'>
-      <ResponsiveContainer width="100%" height={300}>
-      <AreaChart
-          data={data}
-          >
-          <defs>
-          <linearGradient id="color-area" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#6A6CF6" stopOpacity={0.5}/>
-              <stop offset="75%" stopColor="#6A6CF6" stopOpacity={0}/>
-          </linearGradient>
-          </defs>
-          <Tooltip />
-          <XAxis dataKey="name" />
-          <Area type="monotone" stroke="#6A6CF6" strokeWidth={1} fill="url(#color-area)" fillOpacity={1} dataKey="Total" />
-      </AreaChart>
-      </ResponsiveContainer> 
-    </div>
-    </TabPanel>
-    <TabPanel>
-    <div className='flex justify-between mb-10'>
-      <div className='flex gap-4 items-center'>
-          <span className='p-3 bg-[#D8E8EE] rounded-xl'><FcFile/></span>
-        <div>
-            <p className='2xl:text-[18px] md:text-[16px] text-gray-400'> Add to Card </p>
-            <span className='2xl:text-[16px] xm:text-[14px] text-gray-300'>$32 per hour</span>
-        </div>
-      </div>
-      <div className='flex items-center gap-2 t'>
-      <span>8.6%</span>
-      </div>
-    </div>
-    <div className='w-full'>
-      <ResponsiveContainer width="100%" height={300}>
-      <AreaChart
-          data={data}
-          >
-          <defs>
-          <linearGradient id="color-area" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#6A6CF6" stopOpacity={0.5}/>
-              <stop offset="75%" stopColor="#6A6CF6" stopOpacity={0}/>
-          </linearGradient>
-          </defs>
-          <Tooltip />
-          <XAxis dataKey="name" />
-          <Area type="monotone" stroke="#6A6CF6" strokeWidth={1} fill="url(#color-area)" fillOpacity={1} dataKey="Total" />
-      </AreaChart>
-      </ResponsiveContainer> 
-    </div>
-    </TabPanel>
-  </Tabs>
+          <TabPanel className="mt-10">
+          <div className='flex justify-between mb-10'>
+            <div className='flex gap-4 items-center'>
+                <span className='p-3 bg-[#D8E8EE] rounded-xl'><FcFile/></span>
+              <div>
+                  <p className='2xl:text-[18px] md:text-[16px] text-gray-400'> Add to Card </p>
+                  <span className='2xl:text-[16px] xm:text-[14px] text-gray-300'>$32 per hour</span>
+              </div>
+            </div>
+            <div className='flex items-center gap-2 t'>
+            <span>8.6%</span>
+            </div>
+          </div>
+          <div className='w-full'>
+            <ResponsiveContainer width="100%" height={300}>
+            <AreaChart
+                data={data}
+                >
+                <defs>
+                <linearGradient id="color-area" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#6A6CF6" stopOpacity={0.5}/>
+                    <stop offset="75%" stopColor="#6A6CF6" stopOpacity={0}/>
+                </linearGradient>
+                </defs>
+                <Tooltip />
+                <XAxis dataKey="name" />
+                <Area type="monotone" stroke="#6A6CF6" strokeWidth={1} fill="url(#color-area)" fillOpacity={1} dataKey="Total" />
+            </AreaChart>
+            </ResponsiveContainer> 
+          </div>
+          </TabPanel>
+          <TabPanel>
+          <div className='flex justify-between mb-10'>
+            <div className='flex gap-4 items-center'>
+                <span className='p-3 bg-[#D8E8EE] rounded-xl'><FcFile/></span>
+              <div>
+                  <p className='2xl:text-[18px] md:text-[16px] text-gray-400'> Add to Card </p>
+                  <span className='2xl:text-[16px] xm:text-[14px] text-gray-300'>$32 per hour</span>
+              </div>
+            </div>
+            <div className='flex items-center gap-2 t'>
+            <span>8.6%</span>
+            </div>
+          </div>
+          <div className='w-full'>
+            <ResponsiveContainer width="100%" height={300}>
+            <AreaChart
+                data={data}
+                >
+                <defs>
+                <linearGradient id="color-area" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#6A6CF6" stopOpacity={0.5}/>
+                    <stop offset="75%" stopColor="#6A6CF6" stopOpacity={0}/>
+                </linearGradient>
+                </defs>
+                <Tooltip />
+                <XAxis dataKey="name" />
+                <Area type="monotone" stroke="#6A6CF6" strokeWidth={1} fill="url(#color-area)" fillOpacity={1} dataKey="Total" />
+            </AreaChart>
+            </ResponsiveContainer> 
+          </div>
+          </TabPanel>
+          <TabPanel>
+          <div className='flex justify-between mb-10'>
+            <div className='flex gap-4 items-center'>
+                <span className='p-3 bg-[#D8E8EE] rounded-xl'><FcFile/></span>
+              <div>
+                  <p className='2xl:text-[18px] md:text-[16px] text-gray-400'> Add to Card </p>
+                  <span className='2xl:text-[16px] xm:text-[14px] text-gray-300'>$32 per hour</span>
+              </div>
+            </div>
+            <div className='flex items-center gap-2 t'>
+            <span>8.6%</span>
+            </div>
+          </div>
+          <div className='w-full'>
+            <ResponsiveContainer width="100%" height={300}>
+            <AreaChart
+                data={data}
+                >
+                <defs>
+                <linearGradient id="color-area" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#6A6CF6" stopOpacity={0.5}/>
+                    <stop offset="75%" stopColor="#6A6CF6" stopOpacity={0}/>
+                </linearGradient>
+                </defs>
+                <Tooltip />
+                <XAxis dataKey="name" />
+                <Area type="monotone" stroke="#6A6CF6" strokeWidth={1} fill="url(#color-area)" fillOpacity={1} dataKey="Total" />
+            </AreaChart>
+            </ResponsiveContainer> 
+          </div>
+          </TabPanel>
+       </Tabs>
    </div>
   )
 }

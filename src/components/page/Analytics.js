@@ -6,6 +6,8 @@ import ProfitHistory from '../analyticscomponents/ProfitHistory'
 import OrderStatus from '../analyticscomponents/OrderStatus'
 import Transcation from '../analyticscomponents/Transcation'
 import AnalTab from '../analyticscomponents/AnalTab'
+import ActivityTrainers from '../analyticscomponents/ActivityTrainers'
+import ProjectComplete from '../analyticscomponents/ProjectComplete'
 
 function Analytics() {
    
@@ -19,6 +21,10 @@ function Analytics() {
         <OrderStatus />
         <AnalTab />
         <Transcation />
+        </div>
+        <div className='grid grid-flow-row grid-cols-2 2xl:gap-8 xm:gap-6 xl:ml-8 xm:ml-6 xl:mr-8 xm:mr-6 2xl:mt-8 xm:mt-6'>
+          <ActivityTrainers />
+         <ProjectComplete />
         </div>
     </div>
   )
