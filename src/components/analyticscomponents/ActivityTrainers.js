@@ -10,7 +10,7 @@ function ActivityTrainers() {
       </div>
       <div className='flex gap-10 mt-6 border-l'>
         <div>
-            <span className='ml-[-8px] absolute w-4 h-4 rounded-full bg-sky-300'></span>
+            <span className='ml-[-9px] absolute w-4 h-4 rounded-full bg-sky-300'></span>
             <div className='ml-10'>
                 <h4 className='text-gray-500 font-semibold text-[18px] mb-2'>2K spatial meaning</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing.</p>
@@ -20,7 +20,7 @@ function ActivityTrainers() {
       </div>
       <div className='flex gap-10 pt-6 border-l'>
         <div>
-            <span className='ml-[-8px] absolute w-4 h-4 rounded-full bg-yellow-300'></span>
+            <span className='ml-[-9px] absolute w-4 h-4 rounded-full bg-yellow-300'></span>
             <div className='ml-10'>
                 <h4 className='text-gray-500 font-semibold text-[18px] mb-2'>44K spatial meaning</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing.</p>
@@ -30,7 +30,7 @@ function ActivityTrainers() {
       </div>
       <div className='flex gap-10 pt-6 border-l'>
         <div>
-            <span className='ml-[-8px] absolute w-4 h-4 rounded-full bg-red-300'></span>
+            <span className='ml-[-9px] absolute w-4 h-4 rounded-full bg-red-300'></span>
             <div className='ml-10'>
                 <h4 className='text-gray-500 font-semibold text-[18px] mb-2'>6K spatial meaning</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing.</p>
