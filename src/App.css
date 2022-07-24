@@ -1529,10 +1529,6 @@ td {
     margin-left: 0px;
   }
 
-  .xm\:ml-\[-302px\] {
-    margin-left: -302px;
-  }
-
   .xm\:block {
     display: block;
   }
@@ -1547,10 +1543,6 @@ td {
 
   .xm\:w-full {
     width: 100%;
-  }
-
-  .xm\:w-\[302px\] {
-    width: 302px;
   }
 
   .xm\:grid-cols-1 {
@@ -1668,10 +1660,6 @@ td {
     margin-left: 1.5rem;
   }
 
-  .sm\:ml-\[-302px\] {
-    margin-left: -302px;
-  }
-
   .sm\:flex {
     display: flex;
   }
@@ -1690,10 +1678,6 @@ td {
 
   .sm\:w-6\/12 {
     width: 50%;
-  }
-
-  .sm\:w-\[302px\] {
-    width: 302px;
   }
 
   .sm\:grid-cols-2 {
@@ -1768,20 +1752,12 @@ td {
     margin-top: 0px;
   }
 
-  .md\:ml-\[-302px\] {
-    margin-left: -302px;
-  }
-
   .md\:flex {
     display: flex;
   }
 
   .md\:w-5\/12 {
     width: 41.666667%;
-  }
-
-  .md\:w-\[302px\] {
-    width: 302px;
   }
 
   .md\:grid-cols-2 {
@@ -1865,16 +1841,8 @@ td {
     margin-top: 0px;
   }
 
-  .lg\:ml-\[-302px\] {
-    margin-left: -302px;
-  }
-
   .lg\:w-3\/12 {
     width: 25%;
-  }
-
-  .lg\:w-\[302px\] {
-    width: 302px;
   }
 
   .lg\:grid-cols-1 {
@@ -2017,10 +1985,6 @@ td {
     margin-top: 2rem;
   }
 
-  .\32xl\:ml-\[302px\] {
-    margin-left: 302px;
-  }
-
   .\32xl\:hidden {
     display: none;
   }
@@ -2031,22 +1995,6 @@ td {
 
   .\32xl\:w-32 {
     width: 8rem;
-  }
-
-  .\32xl\:w-\[200px\] {
-    width: 200px;
-  }
-
-  .\32xl\:w-\[400px\] {
-    width: 400px;
-  }
-
-  .\32xl\:w-\[300px\] {
-    width: 300px;
-  }
-
-  .\32xl\:w-\[302px\] {
-    width: 302px;
   }
 
   .\32xl\:gap-8 {
