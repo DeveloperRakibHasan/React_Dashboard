@@ -9,9 +9,29 @@ function ProfitRange() {
           {
             data: [10, 20, 10, 30, 20, 20]
           },
+          
         ],
         options: {
-          
+          xaxis: {
+            show: false,
+            labels: {
+              show: false,
+              formatter: false,
+            },
+            axisTicks: {
+              show: false,
+            },
+            axisBorder: {
+              show: false,
+            },
+            tooltip: {
+              enabled: false,
+              formatter: false,
+            },
+          },
+          grid: {
+            show: false,
+          },
           chart: {
             type: 'line',
             dropShadow: {
@@ -22,14 +42,15 @@ function ProfitRange() {
               blur: 4,
               opacity: 1
             },
-            
+           
           },
           colors: ['#FFCC00'],
           dataLabels: {
             enabled: false,
           },
           stroke: {
-            curve: 'smooth'
+            curve: 'smooth',
+            
           },
           markers: {
             size: 0

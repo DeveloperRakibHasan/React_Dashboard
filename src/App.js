@@ -12,6 +12,7 @@ import PageNotFound from './components/page/PageNotFound';
 import Users from './components/page/Users';
 import Calender from './components/page/Calender';
 import Analytics from './components/page/Analytics';
+import Chart from './components/page/Chart';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <PrivetRoute exact path='/' component={Home} />
         <PrivetRoute exact path='/calender' component={Calender} />
         <PrivetRoute exact path='/analytic' component={Analytics} />
+        <PrivetRoute exact path='/chart' component={Chart} />
         <PrivetRoute exact path='/user' component={Users} />
         <PublicRoute exact path='/login' component={Login} />
         <PublicRoute exact path='/signup' component={Signup} />

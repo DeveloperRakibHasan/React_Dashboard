@@ -14,6 +14,16 @@ function TotalReceved() {
         }
         ],
         options: {
+          xaxis: {
+            show: false,
+            labels: {
+              show: false,
+            },
+            
+          },
+          grid: {
+            show: false
+          },
           chart: {
             type: 'bar',
             stacked: true,
@@ -59,7 +69,7 @@ function TotalReceved() {
         options: {
             chart: {
             type: 'radialBar',
-            offsetY: -10
+            offsetY: -10,
             },
             plotOptions: {
             radialBar: {
@@ -102,7 +112,7 @@ function TotalReceved() {
 
   return (
     <div className='bg-white rounded-xl p-6 box-shadow-1 col-span-2'>
-        <h2>Total Receved</h2>
+        <h2 className='text-[28px]'>Total Receved</h2>
         <div className='sm:flex sm:gap-10'>
             <div className='sm:border-r-2 pr-8 sm:mb-0 xm:mb-10 w-full'>
               <ReactApexChart options={twobar.options} series={twobar.series} type="bar" height={300} width='100%' />

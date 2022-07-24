@@ -14,6 +14,20 @@ function ExpencesProfit() {
             }
             ],
             options: {
+              xaxis: {
+                show: false,
+                labels: {
+                  show: false,
+                },
+              
+                axisBorder: {
+                  show: false,
+                },
+              
+              },
+              grid: {
+                show: false,
+              },
               chart: {
                 type: 'bar',
                 height: '100%',

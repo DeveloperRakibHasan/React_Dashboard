@@ -7,6 +7,7 @@ function Expences() {
     const [percentencedata] = useState({
         series: [78],
                   options: {
+                   
                     chart: {
                       type: 'radialBar',
                       offsetY: -20,

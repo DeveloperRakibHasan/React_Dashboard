@@ -14,7 +14,26 @@ function CurrentRate() {
         },
       ],
       options: {
-        
+        grid: {
+          show: false,
+        },
+        xaxis: {
+          show: false,
+          labels: {
+            show: false,
+            formatter: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+          axisBorder: {
+            show: false,
+          },
+          tooltip: {
+            enabled: false,
+            formatter: false,
+          },
+        },
         chart: {
           type: 'line',
           dropShadow: {
@@ -38,7 +57,7 @@ function CurrentRate() {
           size: 0
         },
         tooltrip: false,
-      }
+      },
   })
 
   return (

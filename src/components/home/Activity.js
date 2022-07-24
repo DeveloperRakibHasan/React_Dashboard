@@ -1,5 +1,5 @@
 import React from 'react'
-import { AreaChart,  Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import { AreaChart,  Area, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import '../style/custom.css'
 import { HiOutlineArrowSmUp } from "react-icons/hi";
 
@@ -75,7 +75,7 @@ function Activity() {
               <h6 className='2xl:text-[22px] md:text-[20px] sm:text-[18px] font-medium text-gray-400'>Activity</h6>
               <p className='text-gray-400'>Last Week</p>
             </div>
-             <div className='flex justify-between items-end'>
+             <div className='flex gap-10 justify-between items-end'>
              <div>
              <h2 className='2xl:text-[40px] xm:text-[36px] text-[#5A697D] font-medium'>88%</h2>
               <p className='flex items-center font-medium text-green-500'>
@@ -95,7 +95,6 @@ function Activity() {
                     </linearGradient>
                   </defs>
                   <XAxis fontSize={14} dataKey="name" />
-                  <YAxis />
                   <Tooltip />
                   <Area type="monotone" stroke="#8CDA55" fill="url(#total)" fillOpacity={1} dataKey="Total" />
                 </AreaChart>

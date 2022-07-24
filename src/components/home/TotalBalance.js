@@ -15,7 +15,26 @@ function TotalBalance() {
           },
         ],
         options: {
-          
+          xaxis: {
+            show: false,
+            labels: {
+              show: false,
+              formatter: false,
+            },
+            axisTicks: {
+              show: false,
+            },
+            axisBorder: {
+              show: false,
+            },
+            tooltip: {
+              enabled: false,
+              formatter: false,
+            },
+          },
+          grid: {
+            show: false,
+          },
           chart: {
             type: 'line',
             dropShadow: {

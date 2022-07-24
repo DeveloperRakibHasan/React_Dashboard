@@ -5,11 +5,6 @@
     visibility: hidden;
     opacity: 0;
 }
-#SvgjsG1071{
-    visibility:hidden;
-    opacity: 0;
-}
-#SvgjsG1432{visibility:hidden; opacity:0;}
 
 
 .recharts-cartesian-axis-tick-line{display:none}
@@ -22,17 +17,14 @@
 
 .apexcharts-toolbar{visibility:hidden; opacity:0}
 .apexcharts-title-text{visibility:hidden; opacity:0}
-#SvgjsG1268{visibility:hidden}
-#SvgjsG1244{visibility:hidden}
-#SvgjsG1291{opacity:0}
-.apexcharts-xaxis{display:none; opacity:0}
+/* .apexcharts-xaxis{display:none; opacity:0} */
+
+
 .apexcharts-xaxis-tick{opacity:0}
 
 .apexcharts-yaxis{opacity:0}
 
-#SvgjsG1498{opacity:0}
-
-#SvgjsG1195{ opacity: 0 }
+/* #SvgjsG1195{ opacity: 0 } */
 
 .animation-trophy{
     animation: animate 10s linear infinite;

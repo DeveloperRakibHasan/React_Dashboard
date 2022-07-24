@@ -1,5 +1,5 @@
 import React from 'react'
-import { BarChart, Legend, Bar, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import { BarChart, Legend, Bar, CartesianGrid, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 
 function Visitors() {
@@ -48,7 +48,7 @@ function Visitors() {
       <h6 className='2xl:text-[22px] sm:text-[20px] font-medium text-gray-400'>New visitors</h6>
       <p className='text-gray-400'>Last Week</p>
     </div>
-   <div className='flex justify-between items-end'>
+   <div className='flex gap-10 justify-between items-end'>
     <div>
     <h2 className='2xl:text-[40px] sm:text-[36px] xm:text-[30px] text-[#5A697D] font-medium'>23%</h2>
     <p className='flex items-center font-medium text-red-500'>
@@ -61,7 +61,6 @@ function Visitors() {
       <BarChart data={weekdata}>
         <CartesianGrid />
         <XAxis fontSize={14} dataKey="name" />
-        <YAxis />
         <Tooltip />
         <Legend />
         <Bar dataKey="pv" fill="#F0F0FC" radius={30} legendType="none" />

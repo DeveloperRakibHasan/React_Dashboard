@@ -20,7 +20,7 @@ function OrderStatus() {
       plotOptions: {
         pie: {
           donut: {
-            size: "60%",
+            size: "80%",
             background: "transparent",
   
             labels: {

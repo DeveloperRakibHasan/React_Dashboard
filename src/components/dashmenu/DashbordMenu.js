@@ -14,6 +14,7 @@ import { FiUser } from "react-icons/fi";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { MdOutlineFindInPage } from "react-icons/md";
 import { BiLockOpenAlt } from "react-icons/bi";
+import { BiMessageRounded } from "react-icons/bi";
 import { FaAngleLeft } from "react-icons/fa";
 
 function DashbordMenu() {
@@ -51,11 +52,11 @@ function DashbordMenu() {
                                 </span>
                                 {dashboard ? (<span><FaAngleDown /></span>):(<span><FaAngleRight /></span>)}
                             </Link>
-                            <ul className={dashboard ? 'visible duration-300' : 'hidden'}>
-                            <Link to='/analytic'  className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
+                            <ul className={dashboard ? 'visible ml-6 border-l duration-500' : 'hidden duration-500'}>
+                            <NavLink exact to='/analytic' activeClassName='bg-[#E7E7FE]' className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <BsDot className='mr-2 group-hover:text-blue-400' />
                                 Analytics  
-                            </Link>
+                            </NavLink>
                             <Link  className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <BsDot className='mr-2 group-hover:text-blue-400' />
                                 eCommerce  
@@ -68,7 +69,7 @@ function DashbordMenu() {
                                 </span>
                                 {layouts ? (<span><FaAngleDown /></span>):(<span><FaAngleRight /></span>)}
                             </NavLink>
-                            <ul className={layouts ? 'visible duration-300' : 'hidden'}>
+                            <ul className={layouts ? 'visible ml-6 border-l duration-300' : 'hidden'}>
                             <Link  className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <BsDot className='mr-2 group-hover:text-blue-400' />
                                 Analytics  
@@ -81,14 +82,20 @@ function DashbordMenu() {
 
                             <p className='py-10 text-gray-400 text-[16px]'>APPS & PAGES</p>
 
-                            <NavLink exact to='/calender' className='flex mb-1 items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-400'>
+                            <NavLink exact to='/calender' activeClassName='bg-[#E7E7FE]'  className='flex mb-1 items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-400'>
                                 <FaRegCalendarAlt className='mr-2' />
                                 Calendar
                             </NavLink>
-                            <NavLink exact to='/user' className='flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
+                            <NavLink exact to='/user' activeClassName='bg-[#E7E7FE]'  className='flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <span className='flex items-center py-1'>
                                 <FiUser className='mr-2' />
                                 Users
+                                </span>
+                            </NavLink>
+                            <NavLink exact to='/chart' activeClassName='bg-[#E7E7FE]' className='flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
+                                <span className='flex items-center py-1'>
+                                <BiMessageRounded className='mr-2' />
+                                Chart
                                 </span>
                             </NavLink>
                             <NavLink onClick={()=>setInvoice(!invoice)} exact to='/' className={invoice ? 'flex mb-1 justify-between items-center px-4 py-3 bg-[#E7E7FE]  text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500':'flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'}>
@@ -98,7 +105,7 @@ function DashbordMenu() {
                                 </span>
                                 {invoice ? (<span><FaAngleDown /></span>):(<span><FaAngleRight /></span>)}
                             </NavLink>
-                            <ul className={invoice ? 'visible duration-300' : 'hidden'}>
+                            <ul className={invoice ? 'visible ml-6 border-l duration-300' : 'hidden'}>
                             <Link  className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <BsDot className='mr-2 group-hover:text-blue-400' />
                                 Analytics  
@@ -116,7 +123,7 @@ function DashbordMenu() {
                                 </span>
                                 {role ? (<span><FaAngleDown /></span>):(<span><FaAngleRight /></span>)}
                             </NavLink>
-                            <ul className={role ? 'visible duration-300' : 'hidden'}>
+                            <ul className={role ? 'visible ml-6 border-l duration-300' : 'hidden'}>
                             <Link  className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <BsDot className='mr-2 group-hover:text-blue-400' />
                                 Analytics  
@@ -133,7 +140,7 @@ function DashbordMenu() {
                                 </span>
                                 {page ? (<span><FaAngleDown /></span>):(<span><FaAngleRight /></span>)}
                             </NavLink>
-                            <ul className={page ? 'visible duration-300' : 'hidden'}>
+                            <ul className={page ? 'visible ml-6 border-l duration-300' : 'hidden'}>
                             <Link  className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <BsDot className='mr-2 group-hover:text-blue-400' />
                                 Analytics  
@@ -150,7 +157,7 @@ function DashbordMenu() {
                                 </span>
                                 {auth ? (<span><FaAngleDown /></span>):(<span><FaAngleRight /></span>)}
                             </NavLink>
-                            <ul className={auth ? 'visible duration-300' : 'hidden'}>
+                            <ul className={auth ? 'visible ml-6 border-l duration-300' : 'hidden'}>
                             <Link  className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <BsDot className='mr-2 group-hover:text-blue-400' />
                                 Analytics  
@@ -167,7 +174,7 @@ function DashbordMenu() {
                                 </span>
                                 {wizer ? (<span><FaAngleDown /></span>):(<span><FaAngleRight /></span>)}
                             </NavLink>
-                            <ul className={wizer ? 'visible duration-300' : 'hidden'}>
+                            <ul className={wizer ? 'visible ml-6 border-l duration-300' : 'hidden'}>
                             <Link  className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <BsDot className='mr-2 group-hover:text-blue-400' />
                                 Analytics  
