@@ -4,6 +4,7 @@ import ViewActivity from '../chart/ViewActivity'
 import ExpencesKeyword from '../home/ExpencesKeyword'
 import Heatmap from '../chart/Heatmap'
 import SellStatus from '../chart/SellStatus'
+import SearchCatagory from '../chart/SearchCatagory'
 
 function Chart() {
   return (
@@ -13,6 +14,7 @@ function Chart() {
             <ViewActivity />
             <ExpencesKeyword />
             <Heatmap />
+            <SearchCatagory />
             <SellStatus />
         </div>
     </div>

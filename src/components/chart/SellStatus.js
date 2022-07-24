@@ -6,6 +6,7 @@ function SellStatus() {
     const [percentencedata] = useState({
         series: [78],
                   options: { 
+                   
                     chart: {
                       type: 'radialBar',
                       // offsetY: -20,
@@ -18,8 +19,8 @@ function SellStatus() {
                         startAngle: -180,
                         endAngle: 180,
                         track: {
-                          background: "#71DD37",
-                          strokeWidth: 70,
+                          background: "#EDEFF2",
+                          strokeWidth: 20,
                           margin: 5, // margin is in pixels
                         },
                         dataLabels: {

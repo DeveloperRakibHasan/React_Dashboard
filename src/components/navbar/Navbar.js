@@ -3,6 +3,7 @@ import { SiDash } from "react-icons/si";
 import { NavLink } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext'
 import { FiLogOut } from "react-icons/fi";
+import rakib from '../../assets/img/rakib.jpg'
 
 function Navbar() {
 
@@ -29,7 +30,8 @@ function Navbar() {
             <div>
                 {currentUser ? (
                     <div className='flex items-center'>
-                        <span className='mr-4'>{currentUser.displayName}</span>
+                    <img className='w-8 h-8 rounded-full' src={rakib} alt={currentUser.displayName} />
+                        <span className='mx-4'>{currentUser.displayName}</span>
                         <NavLink exact to='/login'><FiLogOut className='cursor-pointer' onClick={logout} /></NavLink>
                     </div>
                 ): (

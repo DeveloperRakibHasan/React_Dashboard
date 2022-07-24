@@ -40,7 +40,7 @@ function ViewActivity() {
                
               },
               stroke: {
-                width: 16,
+                width: 5,
                 colors: ["#fff"],
               },
 

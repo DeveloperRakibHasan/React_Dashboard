@@ -30,17 +30,19 @@ function DashbordMenu() {
 
     const [toggle, setToggle] = useState(false)
 
-
+  const clickHandaler = (()=> {
+    setToggle(!toggle)
+  })
 
   return (
     <>
      { currentUser ? (
        <div>
-        <div className={!toggle ? 'relative 2xl:ml-0 lg:ml-[-34%] md:ml-[-72%] sm:ml-[-140%] xm:ml-[-500%] duration-500' : 'relative xm:ml-[0%] 2xl:ml-[16.66%] duration-500'}>
-        <div onClick={()=> setToggle(!toggle)} className='duration-500 absolute top-[69.5px] xl:block 2xl:hidden lg:left-[25%] md:left-[41.66%] sm:left-[58.33%] xm:left-[83.33%] cursor-pointer py-6 px-2 bg-[#6A6CF6] text-white z-50'>
+        <div className={!toggle ? 'relative 2xl:ml-0 xm:ml-[-302px] duration-500' : 'relative xm:ml-[0%] 2xl:ml-[302px] duration-500'}>
+        <div onClick={()=> setToggle(!toggle)} className='duration-500 absolute top-[69.5px] xl:block 2xl:hidden left-[302px] cursor-pointer py-6 px-2 bg-[#6A6CF6] text-white z-50'>
         { toggle ? <FaAngleLeft /> : <FaAngleRight />}
             </div>
-            <div className='2xl:w-2/12 lg:w-3/12 md:w-5/12 sm:w-7/12 xm:w-10/12 pt-[70px] fixed z-50'>
+            <div className='2xl:w-2/12 xm:w-[302px] pt-[70px] fixed z-50'>
                 <div className='bg-[#fff] relative h-screen overflow-scroll pb-10'>
                     <span className='text-white w-full flex justify-center mb-4 text-[26px] font-semibold uppercase border-b py-3 bg-[#6A6CF6]'>{currentUser.displayName}</span>
                 <div>
@@ -53,7 +55,7 @@ function DashbordMenu() {
                                 {dashboard ? (<span><FaAngleDown /></span>):(<span><FaAngleRight /></span>)}
                             </Link>
                             <ul className={dashboard ? 'visible ml-6 border-l duration-500' : 'hidden duration-500'}>
-                            <NavLink exact to='/analytic' activeClassName='bg-[#E7E7FE]' className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
+                            <NavLink onClick={clickHandaler} exact to='/analytic' activeClassName='bg-[#E7E7FE]' className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <BsDot className='mr-2 group-hover:text-blue-400' />
                                 Analytics  
                             </NavLink>
@@ -82,17 +84,17 @@ function DashbordMenu() {
 
                             <p className='py-10 text-gray-400 text-[16px]'>APPS & PAGES</p>
 
-                            <NavLink exact to='/calender' activeClassName='bg-[#E7E7FE]'  className='flex mb-1 items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-400'>
+                            <NavLink onClick={clickHandaler} exact to='/calender' activeClassName='bg-[#E7E7FE]'  className='flex mb-1 items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-400'>
                                 <FaRegCalendarAlt className='mr-2' />
                                 Calendar
                             </NavLink>
-                            <NavLink exact to='/user' activeClassName='bg-[#E7E7FE]'  className='flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
+                            <NavLink onClick={clickHandaler} exact to='/user' activeClassName='bg-[#E7E7FE]'  className='flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <span className='flex items-center py-1'>
                                 <FiUser className='mr-2' />
                                 Users
                                 </span>
                             </NavLink>
-                            <NavLink exact to='/chart' activeClassName='bg-[#E7E7FE]' className='flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
+                            <NavLink onClick={clickHandaler} exact to='/chart' activeClassName='bg-[#E7E7FE]' className='flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <span className='flex items-center py-1'>
                                 <BiMessageRounded className='mr-2' />
                                 Chart
