@@ -3,6 +3,7 @@ import { useAuth } from '../../context/AuthContext'
 import trophy from '../../assets/img/trophy1.png'
 import '../style/custom.css'
 
+
 function BestSell() {
   const { currentUser } = useAuth();
   return (

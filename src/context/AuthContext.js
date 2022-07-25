@@ -7,6 +7,9 @@ import {
     signInWithEmailAndPassword,
     signOut,
     onAuthStateChanged,
+    FacebookAuthProvider,
+    GoogleAuthProvider,
+    signInWithPopup
 
 } from 'firebase/auth'
 
@@ -56,6 +59,19 @@ export function AuthProvider({children}){
         return signInWithEmailAndPassword(auth, email, password);
     }
 
+    function googleSignIn() {
+        const auth = getAuth();
+        const googleAuthProvider = new GoogleAuthProvider();
+        return signInWithPopup(auth, googleAuthProvider);
+      }
+    
+      function facebookSignIn() {
+        const auth = getAuth();
+        const facebookAuthProvider = new FacebookAuthProvider();
+        console.log(facebookAuthProvider);
+        return signInWithPopup(auth, facebookAuthProvider);
+      }
+
     //logout function
 
     function logout(){
@@ -67,7 +83,9 @@ export function AuthProvider({children}){
         currentUser,
         signup,
         login,
-        logout
+        logout,
+        googleSignIn,
+        facebookSignIn
     }
 
     return(

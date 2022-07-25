@@ -30,9 +30,9 @@ function DashbordMenu() {
 
     const [toggle, setToggle] = useState(false)
 
-  const clickHandaler = (()=> {
-    setToggle(!toggle)
-  })
+//   const clickHandaler = (()=> {
+//     setToggle(!toggle)
+//   })
 
   return (
     <>
@@ -55,7 +55,7 @@ function DashbordMenu() {
                                 {dashboard ? (<span><FaAngleDown /></span>):(<span><FaAngleRight /></span>)}
                             </Link>
                             <ul className={dashboard ? 'visible ml-6 border-l duration-500' : 'hidden duration-500'}>
-                            <NavLink onClick={clickHandaler} exact to='/analytic' activeClassName='bg-[#E7E7FE]' className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
+                            <NavLink  exact to='/analytic' activeClassName='bg-[#E7E7FE]' className='flex mb-1 group items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <BsDot className='mr-2 group-hover:text-blue-400' />
                                 Analytics  
                             </NavLink>
@@ -84,17 +84,17 @@ function DashbordMenu() {
 
                             <p className='py-10 text-gray-400 text-[16px]'>APPS & PAGES</p>
 
-                            <NavLink onClick={clickHandaler} exact to='/calender' activeClassName='bg-[#E7E7FE]'  className='flex mb-1 items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-400'>
+                            <NavLink  exact to='/calender' activeClassName='bg-[#E7E7FE]'  className='flex mb-1 items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-400'>
                                 <FaRegCalendarAlt className='mr-2' />
                                 Calendar
                             </NavLink>
-                            <NavLink onClick={clickHandaler} exact to='/user' activeClassName='bg-[#E7E7FE]'  className='flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
+                            <NavLink  exact to='/user' activeClassName='bg-[#E7E7FE]'  className='flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <span className='flex items-center py-1'>
                                 <FiUser className='mr-2' />
                                 Users
                                 </span>
                             </NavLink>
-                            <NavLink onClick={clickHandaler} exact to='/chart' activeClassName='bg-[#E7E7FE]' className='flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
+                            <NavLink  exact to='/chart' activeClassName='bg-[#E7E7FE]' className='flex mb-1 justify-between items-center px-4 py-3 text-[18px] rounded-xl hover:bg-[#E7E7FE] text-gray-500'>
                                 <span className='flex items-center py-1'>
                                 <BiMessageRounded className='mr-2' />
                                 Chart
