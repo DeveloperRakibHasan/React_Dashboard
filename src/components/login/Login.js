@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import { NavLink, useHistory } from 'react-router-dom'
 import loginimg from '../../assets/img/login.jpg'
 import { useAuth } from '../../context/AuthContext'
-import { FaFacebookF } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+// import { FaFacebookF } from "react-icons/fa";
+// import { FcGoogle } from "react-icons/fc";
 
 function Login() {
 
@@ -14,9 +14,9 @@ function Login() {
   const [error, setError] = useState();
   const [loading, setLoading] = useState();
 
-  const {login, googleSignIn, facebookSignIn} = useAuth();
+  const {login} = useAuth();
   const history = useHistory();
-  const navigate = useHistory();
+  // const navigate = useHistory();
 
   async function handelSubmit (e) {
     e.preventDefault();
@@ -32,27 +32,27 @@ function Login() {
     }
   };
 
-  const handleGoogleSignin = async (e) => {
-    e.preventDefault();
+  // const handleGoogleSignin = async (e) => {
+  //   e.preventDefault();
 
-    try {
-      await googleSignIn();
-      navigate("/");
-    } catch (e) {
-      setError(e.message);
-    }
-  };
+  //   try {
+  //     await googleSignIn();
+  //     navigate("/");
+  //   } catch (e) {
+  //     setError(e.message);
+  //   }
+  // };
 
-  const handleFacebookChange = async (e) => {
-    e.preventDefault();
+  // const handleFacebookChange = async (e) => {
+  //   e.preventDefault();
 
-    try {
-      await facebookSignIn();
-      navigate("/");
-    } catch (e) {
-      setError(e.message);
-    }
-  };
+  //   try {
+  //     await facebookSignIn();
+  //     navigate("/");
+  //   } catch (e) {
+  //     setError(e.message);
+  //   }
+  // };
 
 
   return (
@@ -69,7 +69,7 @@ function Login() {
               <button type='submit' disabled={loading} className='px-6 leading-7 w-full py-2 bg-green-500 rounded-2xl text-white'>Log in</button>
               {error && <p className='text-red-500 mt-10'>{error}</p>}
             </form>
-            <div className='flex items-center justify-center mt-10'>
+            {/* <div className='flex items-center justify-center mt-10'>
               <span className='w-20 h-[1px] bg-black'></span>
               <span className='px-4'>OR</span>
               <span className='w-20 h-[1px] bg-black'></span>
@@ -83,7 +83,7 @@ function Login() {
                 <FaFacebookF className='text-[26px] text-blue-600 rounded-sm' />
                 <p>Login with Facebook</p>
               </div>
-            </div>
+            </div> */}
             <p className='mt-10'>If you don't have any account please <NavLink exact to='/signup' className='text-blue-500 ml-2'>sign up</NavLink> </p>
           </div>
         </div>
