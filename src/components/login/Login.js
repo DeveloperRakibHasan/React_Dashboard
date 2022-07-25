@@ -75,13 +75,13 @@ function Login() {
               <span className='w-20 h-[1px] bg-black'></span>
             </div>
             <div className='lg:flex gap-5 mt-10 justify-center'>
-              <div onClick={handleFacebookChange} className='rounded-md box-shadow p-3 flex items-center gap-2 cursor-pointer xm:mb-6 lg:mb-0'>
-                <FaFacebookF className='text-[26px] text-blue-600 rounded-sm' />
-                <p>Login with Facebook</p>
-              </div>
               <div onClick={handleGoogleSignin} className='box-shadow rounded-md p-3 flex items-center gap-2 cursor-pointer'>
                 <FcGoogle className='text-[26px] text-blue-600 rounded-sm' />
                 <p>Login with Google</p>
+              </div>
+              <div onClick={handleFacebookChange} className='rounded-md box-shadow p-3 flex items-center gap-2 cursor-pointer xm:mb-6 lg:mb-0'>
+                <FaFacebookF className='text-[26px] text-blue-600 rounded-sm' />
+                <p>Login with Facebook</p>
               </div>
             </div>
             <p className='mt-10'>If you don't have any account please <NavLink exact to='/signup' className='text-blue-500 ml-2'>sign up</NavLink> </p>
