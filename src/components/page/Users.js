@@ -15,12 +15,11 @@ function Users() {
     }, []);
 
   return (
-    <div className='bg-[#F5F5F9] pt-[65px] pb-10 ml-[16.66%]'>
+    <div className='bg-[#F5F5F9] pt-[65px] pb-10 2xl:ml-[16.66%]'>
         <div className='px-10 mt-10'>
             <div className='w-full'>
                {
                 user.map((users) => {
-                    
                     return(
                         <ul className='flex w-full items-center justify-between text-center bg-white px-10 py-4 mb-4 rounded-lg box-shadow'>
                             <li className='flex gap-4 items-center font-bold'>{users.id}<img className='w-8 h-8 rounded-full' src={userimg} alt='' /></li>
