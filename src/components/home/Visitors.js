@@ -61,7 +61,7 @@ function Visitors() {
       <BarChart data={weekdata}>
         <CartesianGrid />
         <XAxis fontSize={14} dataKey="name" />
-        <Tooltip />
+        <Tooltip cursor={{fill: 'transparent'}} />
         <Legend />
         <Bar dataKey="pv" fill="#F0F0FC" radius={30} legendType="none" />
       </BarChart>
