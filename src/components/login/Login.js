@@ -4,11 +4,14 @@ import loginimg from '../../assets/img/login.jpg'
 import { useAuth } from '../../context/AuthContext'
 // import { FaFacebookF } from "react-icons/fa";
 // import { FcGoogle } from "react-icons/fc";
+import { AiFillEye } from "react-icons/ai";
+import { AiFillEyeInvisible } from "react-icons/ai";
 
 function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const  [showPasswoard, setShowPasswoard] = useState(false)
 
 
   const [error, setError] = useState();
@@ -65,7 +68,12 @@ function Login() {
           <div className='sm:w-6/12 xm:w-full ml-6'>
             <form onSubmit={handelSubmit}>
               <input required value={email} onChange={(e)=> setEmail(e.target.value)} placeholder='@email' type='email' className='block w-full border-l-4 border-green-500 box-shadow p-3 rounded-r-2xl mb-10 focus:outline-none focus:placeholder:text-black' />
-              <input required value={password} onChange={(e)=> setPassword(e.target.value)} placeholder='*password' type='password' className='block w-full box-shadow p-3 border-l-4 border-green-500 mb-12 rounded-r-2xl focus:outline-none focus:placeholder:text-black' />
+              <div className='relative'>
+              <input required value={password} onChange={(e)=> setPassword(e.target.value)} placeholder='*password' type={showPasswoard ? 'text' : 'password' } className='block w-full box-shadow p-3 border-l-4 border-green-500 mb-12 rounded-r-2xl focus:outline-none focus:placeholder:text-black' />
+              <div className=' absolute top-[14px] right-6 text-[20px] text-gray-400' onClick={()=>setShowPasswoard(!showPasswoard)}>
+              { showPasswoard ? <AiFillEyeInvisible />  : <AiFillEye />}
+              </div>
+              </div>
               <button type='submit' disabled={loading} className='px-6 leading-7 w-full py-2 bg-green-500 rounded-2xl text-white'>Log in</button>
               {error && <p className='text-red-500 mt-10'>{error}</p>}
             </form>

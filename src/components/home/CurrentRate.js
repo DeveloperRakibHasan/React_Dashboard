@@ -59,6 +59,7 @@ function CurrentRate() {
         tooltrip: false,
       },
   })
+  
 
   return (
     <div className='w-full h-full bg-white box-shadow-1 rounded-xl xl:p-8 xm:p-6 xm:col-span-2 md:col-auto'>
@@ -94,7 +95,7 @@ function CurrentRate() {
               </div>
               <div className='flex items-center gap-2 text-red-500'>
               <HiOutlineArrowSmUp />
-              <span>-2.7%</span>
+              <span>-2.47</span>
               </div>
             </div>
             <div className='flex justify-between'>
