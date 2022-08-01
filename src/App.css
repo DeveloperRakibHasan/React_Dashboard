@@ -688,32 +688,12 @@ video {
   left: 302px;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.right-0 {
-  right: 0px;
+.top-\[14px\] {
+  top: 14px;
 }
 
 .right-6 {
   right: 1.5rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
-.top-3 {
-  top: 0.75rem;
-}
-
-.top-\[14px\] {
-  top: 14px;
 }
 
 .z-50 {
@@ -722,6 +702,10 @@ video {
 
 .z-\[9999\] {
   z-index: 9999;
+}
+
+.z-\[99999\] {
+  z-index: 99999;
 }
 
 .col-span-2 {
